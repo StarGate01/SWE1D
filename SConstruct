@@ -68,35 +68,23 @@ env.Append(CPPPATH=['.'])
 buildDir = '#build'
 
 # section test env
-# '''
-# Generate the program name
+'''
 programName = 'SWE1D'
-
-# Get the source code files
 Export('env')
 env.srcFiles = []
+SConscript(os.path.join('src', 'SConscript'),
+    variant_dir=os.path.join(buildDir, 'build_'+programName),
+    duplicate=0)
+Import('env')
+env.Program(os.path.join(buildDir, programName), env.srcFiles)
+# '''
+
+#section fcore cli
+programName_corecli = 'SWE1D_corecli'
+Export('env')
+env.srcFiles_corecli = []
 SConscript(os.path.join('submodules', 'solvers', 'src', 'solver', 'SConscript'),
-    variant_dir=os.path.join(buildDir, 'build_'+programName),
+    variant_dir=os.path.join(buildDir, 'build_'+programName_corecli),
     duplicate=0)
 Import('env')
-
-# Build the program
-env.Program(os.path.join(buildDir, programName), env.srcFiles)
-# '''
-
-'''
-# section fwave core cli test
-# Generate the program name
-programName = 'SWE1D'
-
-# Get the source code files
-Export('env')
-env.srcFiles = []
-SConscript(os.path.join('solvers', 'src', 'SConscript'),
-    variant_dir=os.path.join(buildDir, 'build_'+programName),
-    duplicate=0)
-Import('env')
-
-# Build the program
-env.Program(os.path.join(buildDir, programName), env.srcFiles)
-'''
+env.Program(os.path.join(buildDir, programName_corecli), env.srcFiles_corecli)

@@ -1,3 +1,7 @@
 [submodule "submodules/solvers"]
 	path = submodules/solvers
 	url = https://gitlab.lrz.de/ga96fox/TsunamiSimulation.git
+
+[submodule "submodules/solvers_preset"]
+	path = submodules/solvers_preset
+	url = https://github.com/TUM-I5/swe_solvers.git

@@ -1,10 +1,13 @@
 {
     "files.associations": {
         "*.vstemplate": "xml",
+        "SConstruct": "python",
+        "SConscript": "python",
         "iostream": "cpp",
         "string": "cpp",
         "cassert": "cpp",
         "fstream": "cpp",
-        "cstring": "cpp"
+        "cstring": "cpp",
+        "cmath": "cpp"
     }
 }

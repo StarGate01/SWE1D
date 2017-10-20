@@ -68,22 +68,23 @@ env.Append(CPPPATH=['.'])
 buildDir = '#build'
 
 # section test env
-'''
+# '''
 # Generate the program name
 programName = 'SWE1D'
 
 # Get the source code files
 Export('env')
 env.srcFiles = []
-SConscript(os.path.join('src', 'SConscript'),
+SConscript(os.path.join('submodules', 'solvers', 'src', 'solver', 'SConscript'),
     variant_dir=os.path.join(buildDir, 'build_'+programName),
     duplicate=0)
 Import('env')
 
 # Build the program
 env.Program(os.path.join(buildDir, programName), env.srcFiles)
-'''
+# '''
 
+'''
 # section fwave core cli test
 # Generate the program name
 programName = 'SWE1D'
@@ -98,3 +99,4 @@ Import('env')
 
 # Build the program
 env.Program(os.path.join(buildDir, programName), env.srcFiles)
+'''

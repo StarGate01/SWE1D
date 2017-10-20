@@ -56,6 +56,7 @@ AddOption('--dbg', action='append_const', dest='cflags', const='-g')
 
 # Scons environement
 env = Environment()
+env.MergeFlags(GetOption('cflags'))
 
 # eclipse specific flag
 env.Append(CCFLAGS=['-fmessage-length=0'])

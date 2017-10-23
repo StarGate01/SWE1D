@@ -1,7 +1,7 @@
 {
     "configurations": [
         {
-            "name": "Linux native",
+            "name": "Linux Native",
             "intelliSenseMode": "clang-x64",
             "includePath": [
                 "${workspaceRoot}",

@@ -2,7 +2,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "taskName": "Build Release",
+            "taskName": "Build Framework Release",
             "type": "shell",
             "command": "scons",
             "problemMatcher": {
@@ -19,7 +19,7 @@
             }
         },
         {
-            "taskName": "Build Debug",
+            "taskName": "Build Framework Debug",
             "type": "shell",
             "command": "scons",
             "args": [
@@ -36,6 +36,49 @@
                     "severity": 4,
                     "message": 5
                 }
+            }
+        },
+        {
+            "taskName": "Build Solver CLI Release",
+            "type": "shell",
+            "command": "scons",
+            "options": {
+                "cwd": "${workspaceRoot}/submodules/solvers"
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative", "${workspaceRoot}/submodules/solvers"],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        },
+        {
+            "taskName": "Build Solver CLI Debug",
+            "type": "shell",
+            "command": "scons",
+            "args": [
+                "--dbg"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}/submodules/solvers"
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative", "${workspaceRoot}/submodules/solvers"],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
             },
             "group": {
                 "kind": "build",
@@ -43,7 +86,7 @@
             }
         },
         {
-            "taskName": "Build Documentation",
+            "taskName": "Build Solver Documentation",
             "type": "shell",
             "command": "bash",
             "args": [
@@ -65,7 +108,7 @@
             }
         },
         {
-            "taskName": "Run Tests",
+            "taskName": "Run Solver Tests",
             "type": "shell",
             "command": "scons",
             "args": [
@@ -73,7 +116,7 @@
             ],
             "problemMatcher": {
                 "owner": "cpp",
-                "fileLocation": ["relative", "${workspaceRoot}"],
+                "fileLocation": ["relative", "${workspaceRoot}/submodules/solver"],
                 "pattern": {
                     "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
                     "file": 1,

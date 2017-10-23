@@ -58,17 +58,13 @@ AddOption('--dbg', action='append_const', dest='cflags', const='-g')
 env = Environment(tools = ['default', 'cxxtest'])
 env.MergeFlags(GetOption('cflags'))
 
-# eclipse specific flag
-env.Append(CCFLAGS=['-fmessage-length=0'])
-
 # Add source directory to include path (important for subdirectories)
 env.Append(CPPPATH=['.'])
 
 # Output directory
 buildDir = '#build'
 
-# section test env
-'''
+# Build program
 programName = 'SWE1D'
 Export('env')
 env.srcFiles = []
@@ -77,14 +73,3 @@ SConscript(os.path.join('src', 'SConscript'),
     duplicate=0)
 Import('env')
 env.Program(os.path.join(buildDir, programName), env.srcFiles)
-# '''
-
-#section fcore cli
-programName_corecli = 'SWE1D_corecli'
-Export('env')
-env.srcFiles_corecli = []
-SConscript(os.path.join('submodules', 'solvers', 'src', 'SConscript'),
-    variant_dir=os.path.join(buildDir, 'build_'+programName_corecli),
-    duplicate=0)
-Import('env')
-env.Program(os.path.join(buildDir, programName_corecli), env.srcFiles_corecli)

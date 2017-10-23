@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(FW) GDB Native Launch",
+            "name": "Framework GDB Linux Native",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceRoot}/build/SWE1D",
@@ -22,7 +22,7 @@
             ]
         },
         {
-            "name": "(FW) GDB WSL Launch",
+            "name": "Framework GDB WSL",
             "type": "cppdbg",
             "request": "launch",
             "program": "/mnt/c/Users/Christoph/Documents/Studium/5_WS1718/TSISIM/Tutorium/SWE1D/build/SWE1D",
@@ -52,13 +52,13 @@
             }
         },
         {
-            "name": "(CORECLI) GDB Native Launch",
+            "name": "Solver CLI GDB Linux Native",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/build/SWE1D_corecli",
+            "program": "${workspaceRoot}/submodules/solver/build/SWE1D_corecli",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceRoot}/build",
+            "cwd": "${workspaceRoot}/submodules/solver/build",
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb",
@@ -72,13 +72,13 @@
             ]
         },
         {
-            "name": "(CORECLI) GDB WSL Launch",
+            "name": "Solver CLI GDB WSL",
             "type": "cppdbg",
             "request": "launch",
-            "program": "/mnt/c/Users/Christoph/Documents/Studium/5_WS1718/TSISIM/Tutorium/SWE1D/build/SWE1D_corecli",
+            "program": "/mnt/c/Users/Christoph/Documents/Studium/5_WS1718/TSISIM/Tutorium/SWE1D/submodules/solver/build/SWE1D_corecli",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "/mnt/c/Users/Christoph/Documents/Studium/5_WS1718/TSISIM/Tutorium/SWE1D/build",
+            "cwd": "/mnt/c/Users/Christoph/Documents/Studium/5_WS1718/TSISIM/Tutorium/SWE1D/submodules/solver/build",
             "environment": [],
             "externalConsole": true,
             "windows": {

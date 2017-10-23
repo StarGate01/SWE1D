@@ -114,6 +114,9 @@
             "args": [
                 "check"
             ],
+            "options": {
+                "cwd": "${workspaceRoot}/submodules/solvers"
+            },
             "problemMatcher": {
                 "owner": "cpp",
                 "fileLocation": ["relative", "${workspaceRoot}/submodules/solver"],

@@ -119,7 +119,7 @@
             },
             "problemMatcher": {
                 "owner": "cpp",
-                "fileLocation": ["relative", "${workspaceRoot}/submodules/solver"],
+                "fileLocation": ["relative", "${workspaceRoot}/submodules/solvers"],
                 "pattern": {
                     "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
                     "file": 1,

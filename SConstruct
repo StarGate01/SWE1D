@@ -55,7 +55,7 @@ import os
 AddOption('--dbg', action='append_const', dest='cflags', const='-g')
 
 # Scons environement
-env = Environment(tools = ['default', 'cxxtest'])
+env = Environment()
 env.MergeFlags(GetOption('cflags'))
 
 # Add source directory to include path (important for subdirectories)

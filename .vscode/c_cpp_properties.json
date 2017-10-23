@@ -5,6 +5,8 @@
             "intelliSenseMode": "clang-x64",
             "includePath": [
                 "${workspaceRoot}",
+                "${workspaceRoot}/submodules/solvers/src",
+                "${workspaceRoot}/submodules/solvers/src/solver",
                 "/usr/include/c++/5",
                 "/usr/include/x86_64-linux-gnu/c++/5",
                 "/usr/include/c++/5/backward",
@@ -23,6 +25,8 @@
             "browse": {
                 "path": [
                     "${workspaceRoot}",
+                    "${workspaceRoot}/submodules/solvers/src",
+                    "${workspaceRoot}/submodules/solvers/src/solver",
                     "/usr/include/c++/5",
                     "/usr/include/x86_64-linux-gnu/c++/5",
                     "/usr/include/c++/5/backward",
@@ -41,6 +45,8 @@
             "intelliSenseMode": "clang-x64",
             "includePath": [
                 "${workspaceRoot}",
+                "${workspaceRoot}/submodules/solvers/src",
+                "${workspaceRoot}/submodules/solvers/src/solver",
                 "C:/lxss_ro/rootfs/usr/include/c++/5",
                 "C:/lxss_ro/rootfs/usr/include/x86_64-linux-gnu/c++/5",
                 "C:/lxss_ro/rootfs/usr/include/c++/5/backward",
@@ -59,6 +65,8 @@
             "browse": {
                 "path": [
                     "${workspaceRoot}",
+                    "${workspaceRoot}/submodules/solvers/src",
+                    "${workspaceRoot}/submodules/solvers/src/solver",
                     "C:/lxss_ro/rootfs/usr/include/c++/5",
                     "C:/lxss_ro/rootfs/usr/include/x86_64-linux-gnu/c++/5",
                     "C:/lxss_ro/rootfs/usr/include/c++/5/backward",

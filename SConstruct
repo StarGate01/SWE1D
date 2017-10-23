@@ -55,7 +55,7 @@ import os
 AddOption('--dbg', action='append_const', dest='cflags', const='-g')
 
 # Scons environement
-env = Environment()
+env = Environment(tools = ['default', 'cxxtest'])
 env.MergeFlags(GetOption('cflags'))
 
 # eclipse specific flag
@@ -83,7 +83,7 @@ env.Program(os.path.join(buildDir, programName), env.srcFiles)
 programName_corecli = 'SWE1D_corecli'
 Export('env')
 env.srcFiles_corecli = []
-SConscript(os.path.join('submodules', 'solvers', 'src', 'solver', 'SConscript'),
+SConscript(os.path.join('submodules', 'solvers', 'src', 'SConscript'),
     variant_dir=os.path.join(buildDir, 'build_'+programName_corecli),
     duplicate=0)
 Import('env')

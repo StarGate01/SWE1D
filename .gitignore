@@ -7,5 +7,6 @@ build/
 .pydevproject
 .settings
 
-# Scons database
+# Scons stuff
 .sconsign.dblite
+site_scons/site_tools/cxxtest.pyc

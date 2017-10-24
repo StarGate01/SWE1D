@@ -8,6 +8,8 @@
         "cassert": "cpp",
         "fstream": "cpp",
         "cstring": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "complex": "cpp",
+        "cstdlib": "cpp"
     }
 }

@@ -57,6 +57,7 @@ AddOption('--dbg', action='append_const', dest='cflags', const='-g')
 # Scons environement
 env = Environment()
 env.MergeFlags(GetOption('cflags'))
+env.Append(CXXFLAGS="-std=c++11")
 
 # Add source directory to include path (important for subdirectories)
 env.Append(CPPPATH=['.'])

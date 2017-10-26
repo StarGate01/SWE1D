@@ -50,56 +50,6 @@
             "sourceFileMap": {
                 "/mnt/c": "c:/"
             }
-        },
-        {
-            "name": "Solver CLI GDB Linux Native",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceRoot}/submodules/solver/build/SWE1D_corecli",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceRoot}/submodules/solver/build",
-            "environment": [],
-            "externalConsole": true,
-            "MIMode": "gdb",
-            "miDebuggerPath": "/usr/bin/gdb",
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
-            ]
-        },
-        {
-            "name": "Solver CLI GDB WSL",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "/mnt/c/Users/Christoph/Documents/Studium/5_WS1718/TSISIM/Tutorium/SWE1D/submodules/solver/build/SWE1D_corecli",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "/mnt/c/Users/Christoph/Documents/Studium/5_WS1718/TSISIM/Tutorium/SWE1D/submodules/solver/build",
-            "environment": [],
-            "externalConsole": true,
-            "windows": {
-                "MIMode": "gdb",
-                "setupCommands": [
-                    {
-                        "description": "Enable pretty-printing for gdb",
-                        "text": "-enable-pretty-printing",
-                        "ignoreFailures": true
-                    }
-                ]
-            }, 
-            "pipeTransport": {
-                "pipeCwd": "",
-                "pipeProgram": "c:/windows/sysnative/bash.exe",
-                "pipeArgs": ["-c"],
-                "debuggerPath": "/usr/bin/gdb"
-            },
-            "sourceFileMap": {
-                "/mnt/c": "c:/"
-            }
         }
     ]
 }

@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Framework GDB Linux Native",
+            "name": "GDB Linux Native",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceRoot}/build/SWE1D",
@@ -22,7 +22,7 @@
             ]
         },
         {
-            "name": "Framework GDB WSL",
+            "name": "GDB WSL",
             "type": "cppdbg",
             "request": "launch",
             "program": "/mnt/c/Users/Christoph/Documents/Studium/5_WS1718/TSISIM/Tutorium/SWE1D/build/SWE1D",

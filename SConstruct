@@ -51,13 +51,15 @@ print ''
 
 import os
 
-# Add debug flags
-AddOption('--dbg', action='append_const', dest='cflags', const='-g')
-
 # Scons environement
 env = Environment()
-env.MergeFlags(GetOption('cflags'))
 env.Append(CXXFLAGS="-std=c++11")
+
+# Add debug flags
+debug = ARGUMENTS.get('debug', 0)
+if int(debug):
+   env.Append(CXXFLAGS = ['-g'])
+   env.Append(CPPDEFINES=['DEBUG'])
 
 # Add source directory to include path (important for subdirectories)
 env.Append(CPPPATH=['.'])

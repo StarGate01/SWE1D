@@ -41,7 +41,7 @@
                 "kind": "build",
                 "isDefault": true
             }
-        }
+        },
         {
             "taskName": "Build Solver Documentation",
             "type": "shell",

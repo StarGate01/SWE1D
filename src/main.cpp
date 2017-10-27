@@ -36,7 +36,8 @@
 
 #include "types.h"
 #include "WavePropagation.h"
-#include "scenarios/dambreak.h"
+//#include "scenarios/dambreak.h"
+#include "scenarios/shockshock.h"
 //#include "writer/ConsoleWriter.h"
 #include "writer/VtkWriter.h"
 #include "tools/args.h"
@@ -49,7 +50,7 @@ int main(int argc, char** argv)
 	tools::Args args(argc, argv);
 
 	// Scenario
-	scenarios::DamBreak scenario(args.size());
+	scenarios::ShockShock scenario(args.size());
 
 	// Allocate memory
 	// Water height
@@ -58,9 +59,10 @@ int main(int argc, char** argv)
 	T *hu = new T[args.size()+2];
 
 	// Initialize water height and momentum
-	for (unsigned int i = 0; i < args.size()+2; i++)
+	for (unsigned int i = 0; i < args.size()+2; i++){
 		h[i] = scenario.getHeight(i);
-	memset(hu, 0, sizeof(T)*(args.size()+2));
+		hu[i] = scenario.getSpeed(i);
+	}
 
 	// Create a writer that is responsible printing out values
 	//writer::ConsoleWriter writer;

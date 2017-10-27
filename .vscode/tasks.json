@@ -53,28 +53,15 @@
             "problemMatcher": []
         },
         {
-            "taskName": "Clean Data",
+            "taskName": "Regenerate Data",
             "type": "shell",
-            "command": "rm",
+            "command": "bash",
             "options": {
                 "cwd": "${workspaceRoot}/build"
             },
             "args": [
-                "-f",
-                "*.vtp",
-                "*.vtr"
-            ],
-            "problemMatcher": []
-        },
-        {
-            "taskName": "Generate Data",
-            "type": "shell",
-            "command": "./SWE1D",
-            "options": {
-                "cwd": "${workspaceRoot}/build"
-            },
-            "args": [
-               
+               "-c",
+               "\"rm -f *.vtp *.vtr && ./SWE1D\""
             ],
             "problemMatcher": []
         },

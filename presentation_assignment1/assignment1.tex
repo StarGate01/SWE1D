@@ -1,6 +1,11 @@
 \documentclass[shortpres]{beamer}
 \usetheme{CambridgeUS}
 
+% Depending on build configuration, one of these packages will
+% enable unicode
+%\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{multicol}
@@ -66,15 +71,96 @@
 
 \title[{Tsunami simulation}]{Assignment 1}
 
-\author[Bellamy Honal, Wieser]{George Bellamy, Christoph Honal, Felix Wieser\\\vspace{10pt}{\small Proseminar}}
+\author[Bellamy Honal, Wieser]{George Bellamy, Christoph Honal, Felix Wieser\\\vspace{10pt}{\small Bachelorpraktikum}}
 \institute[TU M\"unchen]{Technische Universit\"at M\"unchen}
 
-\date{July 25, 2017}
+\date{7. November 2017}
 
 \begin{document}
 \maketitle
 
-\begin{frame}{Title}
-	Bla
+\begin{frame}{Shock-Shock Problem}
+	%TODO: Insert content here
+\end{frame}
+
+\begin{frame}{Rare-Rare Problem}
+	%TODO: Insert content here
+\end{frame}
+
+\begin{frame}{Dam-Break}
+	%TODO: Insert content here
+\end{frame}
+
+%TODO: Remove / comment the following slides, when finished
+\begin{frame}{Template: image centered, text below}
+	\begin{figure}[t]
+	\includegraphics[clip, width=.6\linewidth]{img/dummy_image.jpg}
+	\caption*{Dummy image}
+	Die Crash Test Dummies sind eine um 1840 gegründete, weltweit operierende Gang von Verkehrssündern. Zahlreiche, teils spektakuläre, Unfälle gehen auf das Konto dieser von Interpol, CIA und FDP gesuchten Organisation (stupidedia.org)
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Template: content left, content right}
+	\begin{multicols}{2}
+		\begin{figure}[t]
+			\includegraphics[clip, width=0.98\linewidth]{img/dummy_image.jpg}
+			\caption*{Dummy image}
+		\end{figure}		
+		
+	\columnbreak
+	
+		Die Crash Test Dummies sind eine um 1840 gegründete, weltweit operierende Gang von Verkehrssündern. Zahlreiche, teils spektakuläre, Unfälle gehen auf das Konto dieser von Interpol, CIA und FDP gesuchten Organisation (stupidedia.org)
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Mathegedöns}
+	\begin{multicols}{2}
+		
+		Aufzählung
+		\begin{itemize}
+			\item Das ist
+			\item eine wirklich
+			\item sinnvolle Aufzählung
+		\end{itemize}
+		
+		\vspace{10pt}
+		
+		Nummerierung
+		\begin{enumerate}
+			\item Eins
+			\item Zwei
+			\item Drölf
+		\end{enumerate}
+		
+		\vspace{10pt}
+		
+		\begin{tabular}{ll}
+			Name & Leistung\\
+			\hline
+			Heinz & Nicht so toll\\
+			Anton & Besser\\
+			Julian & Alles gewonnen (Streber)
+		\end{tabular}
+		
+	\columnbreak
+		
+		Matrix \hspace{10pt}
+		$
+			\begin{bmatrix}
+				a & b & c\\
+				d & e & f\\
+				g & \dots & 42
+			\end{bmatrix}
+			\cdot
+			\begin{pmatrix}
+			a & b & c\\
+			d & e & f\\
+			g & \dots & 42
+			\end{pmatrix}
+			\cdots
+		$
+		
+	\end{multicols}
+	
 \end{frame}
 \end{document}

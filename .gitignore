@@ -10,3 +10,18 @@ build/
 # Scons stuff
 .sconsign.dblite
 site_scons/site_tools/cxxtest.pyc
+
+# Tex stuff
+*.log
+*.aux
+*.dvi
+*.fdb_latexmk
+*.fls
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
+
+# Ignore PDF by default (use -f to add pdf anyway)
+*.pdf

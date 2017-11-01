@@ -41,8 +41,8 @@
 
 // Include the solver that is currently used
 #define SUPPRESS_SOLVER_DEBUG_OUTPUT
-// #include "../submodules/solvers_preset/src/solver/FWave.hpp"
-#include "../submodules/solvers/src/solver/FWave.hpp"
+#include "../submodules/solvers_preset/src/solver/FWave.hpp"
+// #include "../submodules/solvers/src/solver/FWave.hpp"
 
 /**
  * Allocated variables:

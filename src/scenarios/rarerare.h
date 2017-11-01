@@ -11,7 +11,7 @@
 namespace scenarios
 {
 
-class RaraRare
+class RareRare
 {
 private:
 	/** Number of cells */
@@ -26,7 +26,7 @@ private:
 	const signed int m_rightSpeed = 10;
 
 public:
-	RaraRare(unsigned int size)
+	RareRare(unsigned int size)
 		: m_size(size)
 	{
 	}

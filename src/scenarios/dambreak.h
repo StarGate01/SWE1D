@@ -47,6 +47,16 @@ class DamBreak
 private:
 	/** Number of cells */
 	const unsigned int m_size;
+	/** Point of collision (here: in the middle) */
+	const unsigned int m_xdis = m_size/2;
+	/** initial water height left of xdis*/
+	const float m_leftHeight = 14;
+	/** initial water height righr of xdis*/
+	const float m_rightHeight = 3.5;
+	/** initial water speed left of xdis */
+	const float m_leftSpeed = 0;
+	/** initial water speed right of xdis */
+	const float m_rightSpeed = 0.7;
 
 public:
 	DamBreak(unsigned int size)
@@ -57,12 +67,23 @@ public:
 	/**
 	 * @return Initial water height at pos
 	 */
-	unsigned int getHeight(unsigned int pos)
+	float getHeight(unsigned int pos)
 	{
 		if (pos <= m_size/2)
-			return 15;
+			return m_leftHeight;
 
-		return 10;
+		return m_rightHeight;
+	}
+
+	/**
+	 * @return Initial water speed at pos
+	 */
+	float getSpeed(unsigned int pos)
+	{
+		if (pos <= m_xdis)
+			return m_leftSpeed;
+
+		return m_rightSpeed; 
 	}
 
 	/**

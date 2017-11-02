@@ -6,6 +6,10 @@
 %\usepackage[utf8]{inputenc}
 \usepackage{fontspec}
 
+%Showing movies
+\usepackage{graphicx, animate, media9, movie15}
+\usepackage{animate}
+
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{multicol}
@@ -63,8 +67,9 @@
 
 
 %############### Self defined commands ##############################
-\newcommand{\footer}[1]{\vfill \tiny{\textit{#1}}}
-\newcommand{\footerstd}{\footer{Figures by Julius Ziegler, Philipp Bender, Thao Dang and Christoph Stiller:\\"Trajectory Planning for BERTHA - a Local, Continuous Method" in IEEE Intelligent Vehicles Symposium (IV), IEEE, 2014}}
+\newcommand{\imgvoffset}{-20pt}
+\newcommand{\texthoffset}{20pt}
+\newcommand{\imgfullscale}{0.75}
 %####################################################################
 
 \usepackage{anyfontsize}
@@ -80,23 +85,48 @@
 \maketitle
 
 \begin{frame}{Shock-Shock Problem}
-	%TODO: Insert content here
+	\begin{figure}[t]
+		\vspace{\imgvoffset}
+		\includegraphics[clip, width=\imgfullscale\linewidth]{img/Shock-Shock.png}
+		\caption*{Shock-Shock problem}
+	\end{figure}
+	%TODO: Add text
+	Some random text
 \end{frame}
 
+%\begin{frame}{Shock-Shock Problem}
+%	\begin{center}
+%		\animategraphics[loop,controls,width=\linewidth]{1}{img/4dorfgif}{0}{0}
+%	\end{center}
+%\end{frame}
+
 \begin{frame}{Rare-Rare Problem}
-	%TODO: Insert content here
+	\begin{figure}[t]
+		\vspace{\imgvoffset}
+		\includegraphics[clip, width=\imgfullscale\linewidth]{img/Rare-Rare.png}
+		\caption*{Rare-Rare problem}
+	\end{figure}
+	%TODO: Add text
+	Some random text
 \end{frame}
 
 \begin{frame}{Dam-Break}
-	%TODO: Insert content here
+	\begin{figure}[t]
+		\vspace{\imgvoffset}
+		\includegraphics[width=\imgfullscale\linewidth]{img/4_dorf_arrival_as_graph.png}
+		\caption*{Arrival of the wave at the village}
+	\end{figure}
+	%TODO: Set real value
+	The wave arrives after $\approx$ $7,3$ minutes at the village
 \end{frame}
 
 %TODO: Remove / comment the following slides, when finished
 \begin{frame}{Template: image centered, text below}
 	\begin{figure}[t]
-	\includegraphics[clip, width=.6\linewidth]{img/dummy_image.jpg}
-	\caption*{Dummy image}
-	Die Crash Test Dummies sind eine um 1840 gegründete, weltweit operierende Gang von Verkehrssündern. Zahlreiche, teils spektakuläre, Unfälle gehen auf das Konto dieser von Interpol, CIA und FDP gesuchten Organisation (stupidedia.org)
+		\vspace{\imgvoffset}
+		\includegraphics[clip, width=\imgfullscale\linewidth]{img/dummy_image.jpg}
+		\caption*{Dummy image}
+		Die Crash Test Dummies sind eine um 1840 gegründete, weltweit operierende Gang von Verkehrssündern. Zahlreiche, teils spektakuläre, Unfälle gehen auf das Konto dieser von Interpol, CIA und FDP gesuchten Organisation (stupidedia.org)
 	\end{figure}
 \end{frame}
 

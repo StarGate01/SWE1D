@@ -9,6 +9,7 @@
 %Showing movies
 \usepackage{graphicx, animate, media9, movie15}
 \usepackage{animate}
+\usepackage{array}
 
 \usepackage{caption}
 \usepackage{subcaption}
@@ -84,6 +85,19 @@
 \begin{document}
 \maketitle
 
+
+
+%\begin{frame}{Shock-Shock Problem}
+%	\begin{center}
+%		\animategraphics[loop,controls,width=\linewidth]{1}{img/4dorfgif}{0}{0}
+%	\end{center}
+%\end{frame}
+
+\begin{frame}{Solver implementation}
+	%TODO Add content
+	Add text
+\end{frame}
+
 \begin{frame}{Shock-Shock Problem}
 	\begin{figure}[t]
 		\vspace{\imgvoffset}
@@ -93,12 +107,6 @@
 	%TODO: Add text
 	Some random text
 \end{frame}
-
-%\begin{frame}{Shock-Shock Problem}
-%	\begin{center}
-%		\animategraphics[loop,controls,width=\linewidth]{1}{img/4dorfgif}{0}{0}
-%	\end{center}
-%\end{frame}
 
 \begin{frame}{Rare-Rare Problem}
 	\begin{figure}[t]
@@ -110,15 +118,36 @@
 	Some random text
 \end{frame}
 
-\begin{frame}{Dam-Break}
+\begin{frame}{Dam-Break: When does the water arrive?}
 	\begin{figure}[t]
 		\vspace{\imgvoffset}
 		\includegraphics[width=\imgfullscale\linewidth]{img/4_dorf_arrival_as_graph.png}
 		\caption*{Arrival of the wave at the village}
 	\end{figure}
-	%TODO: Set real value
 	The wave arrives after $\approx$ $7,3$ minutes at the village
 \end{frame}
+
+\begin{frame}{Dam-Break: Scenario 1}
+	\begin{figure}[t]
+		\vspace{\imgvoffset}
+		\includegraphics[width=\imgfullscale\linewidth]{img/4_dorf_arrival_as_graph.png}
+		\caption*{Scenario visualisation}
+	\end{figure}
+	
+	\begin{tabular}{m{3cm} m{\linewidth-5cm}}
+		$
+		\begin{matrix}
+		h_l & = & 42\\
+		h_r & = & 42
+		\end{matrix}
+		$
+		&
+		%TODO Add description here
+		Add description here
+	\end{tabular}
+\end{frame}
+
+%TODO: Add slide for each scenario
 
 %TODO: Remove / comment the following slides, when finished
 \begin{frame}{Template: image centered, text below}

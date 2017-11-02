@@ -37,12 +37,12 @@
 #ifndef WAVEPROPAGATION_H_
 #define WAVEPROPAGATION_H_
 
-#include "types.h"
+#include "types.hpp"
 
 // Include the solver that is currently used
 #define SUPPRESS_SOLVER_DEBUG_OUTPUT
-#include "../submodules/solvers_preset/src/solver/FWave.hpp"
-// #include "../submodules/solvers/src/solver/FWave.hpp"
+//#include "../submodules/solvers_preset/src/solver/FWave.hpp"
+#include "../submodules/solvers/src/solver/FWave.hpp"
 
 /**
  * Allocated variables:
@@ -73,69 +73,73 @@
  */
 class WavePropagation
 {
-private:
-	T *m_h;
-	T *m_hu;
 
-	T *m_hNetUpdatesLeft;
-	T *m_hNetUpdatesRight;
+	private:
 
-	T *m_huNetUpdatesLeft;
-	T *m_huNetUpdatesRight;
+		T *m_h;
+		T *m_hu;
 
-	unsigned int m_size;
+		T *m_hNetUpdatesLeft;
+		T *m_hNetUpdatesRight;
 
-	T m_cellSize;
+		T *m_huNetUpdatesLeft;
+		T *m_huNetUpdatesRight;
 
-	/** The solver used in computeNumericalFluxes */
-	solver::FWave<T> m_solver;
+		unsigned int m_size;
 
-public:
-	/**
-	 * @param size Domain size (= number of cells) without ghost cells
-	 * @param cellSize Size of one cell
-	 */
-	WavePropagation(T *h, T *hu, unsigned int size, T cellSize)
-		: m_h(h),
-		  m_hu(hu),
-		  m_size(size),
-		  m_cellSize(cellSize)
-	{
-		// Allocate net updates
-		m_hNetUpdatesLeft = new T[size+1];
-		m_hNetUpdatesRight = new T[size+1];
-		m_huNetUpdatesLeft = new T[size+1];
-		m_huNetUpdatesRight = new T[size+1];
-	}
+		T m_cellSize;
 
-	~WavePropagation()
-	{
-		// Free allocated memory
-		delete [] m_hNetUpdatesLeft;
-		delete [] m_hNetUpdatesRight;
-		delete [] m_huNetUpdatesLeft;
-		delete [] m_huNetUpdatesRight;
-	}
+		/** The solver used in computeNumericalFluxes */
+		solver::FWave<T> m_solver;
 
-	/**
-	 * Computes the net-updates from the unknowns
-	 *
-	 * @return The maximum possible time step
-	 */
-	T computeNumericalFluxes();
+	public:
 
-	/**
-	 * Update the unknowns with the already computed net-updates
-	 *
-	 * @param dt Time step size
-	 */
-	void updateUnknowns(T dt);
+		/**
+		 * @param size Domain size (= number of cells) without ghost cells
+		 * @param cellSize Size of one cell
+		 */
+		WavePropagation(T *h, T *hu, unsigned int size, T cellSize)
+			: m_h(h),
+			m_hu(hu),
+			m_size(size),
+			m_cellSize(cellSize)
+		{
+			// Allocate net updates
+			m_hNetUpdatesLeft = new T[size+1];
+			m_hNetUpdatesRight = new T[size+1];
+			m_huNetUpdatesLeft = new T[size+1];
+			m_huNetUpdatesRight = new T[size+1];
+		}
 
-	/**
-	 * Updates h and hu according to the outflow condition to both
-	 * boundaries
-	 */
-	void setOutflowBoundaryConditions();
+		~WavePropagation()
+		{
+			// Free allocated memory
+			delete [] m_hNetUpdatesLeft;
+			delete [] m_hNetUpdatesRight;
+			delete [] m_huNetUpdatesLeft;
+			delete [] m_huNetUpdatesRight;
+		}
+
+		/**
+		 * Computes the net-updates from the unknowns
+		 *
+		 * @return The maximum possible time step
+		 */
+		T computeNumericalFluxes();
+
+		/**
+		 * Update the unknowns with the already computed net-updates
+		 *
+		 * @param dt Time step size
+		 */
+		void updateUnknowns(T dt);
+
+		/**
+		 * Updates h and hu according to the outflow condition to both
+		 * boundaries
+		 */
+		void setOutflowBoundaryConditions();
+		
 };
 
 

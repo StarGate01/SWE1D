@@ -37,63 +37,71 @@
 #ifndef SCENARIOS_DAMBREAK_H_
 #define SCENARIOS_DAMBREAK_H_
 
-#include "types.h"
+#include <vector>
+#include "../types.hpp"
 
 namespace scenarios
 {
 
-class DamBreak
-{
-private:
-	/** Number of cells */
-	const unsigned int m_size;
-	/** Point of collision (here: in the middle) */
-	const unsigned int m_xdis = m_size/2;
-	/** initial water height left of xdis*/
-	const float m_leftHeight = 14;
-	/** initial water height righr of xdis*/
-	const float m_rightHeight = 3.5;
-	/** initial water speed left of xdis */
-	const float m_leftSpeed = 0;
-	/** initial water speed right of xdis */
-	const float m_rightSpeed = 0.7;
-
-public:
-	DamBreak(unsigned int size)
-		: m_size(size)
+	class DamBreak
 	{
-	}
 
-	/**
-	 * @return Initial water height at pos
-	 */
-	float getHeight(unsigned int pos)
-	{
-		if (pos <= m_size/2)
-			return m_leftHeight;
+	private:
+		
+		/** Number of cells */
+		const unsigned int m_size;
+		/** Point of collision (here: in the middle) */
+		const unsigned int m_xdis = m_size/2;
+		/** initial water height left of xdis*/
+		const float m_leftHeight = 15;
+		/** initial water height righr of xdis*/
+		const float m_rightHeight = 10;
+		/** initial water speed left of xdis */
+		const float m_leftSpeed = 0;
+		/** initial water speed right of xdis */
+		const float m_rightSpeed = 0;
 
-		return m_rightHeight;
-	}
+		/** Additional options */
+		//std::vector<int> m_options;
 
-	/**
-	 * @return Initial water speed at pos
-	 */
-	float getSpeed(unsigned int pos)
-	{
-		if (pos <= m_xdis)
-			return m_leftSpeed;
+	public:
 
-		return m_rightSpeed; 
-	}
+		DamBreak(unsigned int size) //, std::vector<int> options)
+			: m_size(size) //, m_options(options)
+		{
+		}
 
-	/**
-	 * @return Cell size of one cell (= domain size/number of cells)
-	 */
-	T getCellSize()
-	{
-		return 1000.f / m_size;
-	}
-};
+		/**
+		 * @return Initial water height at pos
+		 */
+		float getHeight(unsigned int pos)
+		{
+			if (pos <= m_size/2)
+				return m_leftHeight;
+
+			return m_rightHeight;
+		}
+
+		/**
+		 * @return Initial water speed at pos
+		 */
+		float getSpeed(unsigned int pos)
+		{
+			if (pos <= m_xdis)
+				return m_leftSpeed;
+
+			return m_rightSpeed; 
+		}
+
+		/**
+		 * @return Cell size of one cell (= domain size/number of cells)
+		 */
+		T getCellSize()
+		{
+			return 1000.f / m_size;
+		}
+
+	};
 
 }
 

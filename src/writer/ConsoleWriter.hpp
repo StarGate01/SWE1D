@@ -29,11 +29,56 @@
  *
  *  Sie sollten eine Kopie der GNU General Public License zusammen mit diesem
  *  Programm erhalten haben. Wenn nicht, siehe <http://www.gnu.org/licenses/>.
- *
+ * 
  * @copyright 2013 Technische Universitaet Muenchen
  * @author Sebastian Rettenberger <rettenbs@in.tum.de>
  */
 
-#include "args.h"
+#ifndef CONSOLEWRITER_H_
+#define CONSOLEWRITER_H_
 
+#include <iostream>
+#include "../types.hpp"
 
+namespace writer
+{
+
+	/**
+	 * A simple writer class, that writes h and hu to stdout (or another ostream)
+	 */
+	class ConsoleWriter
+	{
+		
+		private:
+
+			std::ostream &m_ostream;
+
+		public:
+
+			ConsoleWriter(std::ostream &ostream = std::cout)
+				: m_ostream(ostream)
+			{
+			}
+
+			/**
+			 * Writes all values (without boundary values) to the ostream
+			 *
+			 * @param size Number of cells (without boundary values)
+			 */
+			void write(const T *h, const T *hu, unsigned int size)
+			{
+				for (unsigned int i=1; i < size+1; i++) {
+					m_ostream << h[i] << ' ';
+				}
+				m_ostream << '\n';	// do not flush the buffer here (do not use std::endl)
+				for (unsigned int i=1; i < size+1; i++) {
+					m_ostream << hu[i] << ' ';
+				}
+				m_ostream << std::endl;
+			}
+			
+	};
+
+}
+
+#endif /* CONSOLEWRITER_H_ */

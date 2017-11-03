@@ -113,6 +113,18 @@
                 "kind": "test",
                 "isDefault": true
             }
+        },
+        {
+            "taskName": "Build Assignment 1 Presentation",
+            "type": "shell",
+            "command": "xelatex",
+            "args": [
+                "assignment1.tex"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}/submodules/solvers/documentation/presentation_assignment1"
+            },
+            "problemMatcher": []
         }
     ]
 }

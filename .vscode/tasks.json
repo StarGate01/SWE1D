@@ -2,7 +2,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "taskName": "Build Release",
+            "taskName": "Build Release Binaries",
             "type": "shell",
             "command": "scons",
             "problemMatcher": {
@@ -19,7 +19,7 @@
             }
         },
         {
-            "taskName": "Build Debug",
+            "taskName": "Build Debug Binaries",
             "type": "shell",
             "command": "scons",
             "args": [
@@ -43,7 +43,7 @@
             }
         },
         {
-            "taskName": "Clean All",
+            "taskName": "Clean Binaries",
             "type": "shell",
             "command": "rm",
             "args": [
@@ -66,7 +66,7 @@
             "problemMatcher": []
         },
         {
-            "taskName": "Build Solver Documentation",
+            "taskName": "Build Documentation",
             "type": "shell",
             "command": "bash",
             "args": [
@@ -88,7 +88,20 @@
             }
         },
         {
-            "taskName": "Run Solver Tests",
+            "taskName": "Clean Documentation",
+            "type": "shell",
+            "command": "rm",
+            "args": [
+                "-r",
+                "build"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}/submodules/solvers/documentation"
+            },
+            "problemMatcher": []
+        },
+        {
+            "taskName": "Run Tests",
             "type": "shell",
             "command": "scons",
             "args": [
@@ -113,6 +126,31 @@
                 "kind": "test",
                 "isDefault": true
             }
+        },
+        {
+            "taskName": "Build Presentation",
+            "type": "shell",
+            "command": "xelatex",
+            "args": [
+                "assignment1.tex"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}/submodules/solvers/documentation/presentation1"
+            },
+            "problemMatcher": []
+        },
+        {
+            "taskName": "Clean Presentation",
+            "type": "shell",
+            "command": "rm",
+            "args": [
+                "-f",
+                "*.aux", "*.log", "*.nav", "*.out", "*.pdf", "*.snm", "*.toc"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}/submodules/solvers/documentation/presentation1"
+            },
+            "problemMatcher": []
         }
     ]
 }

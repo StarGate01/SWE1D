@@ -34,7 +34,7 @@
  * @author Sebastian Rettenberger <rettenbs@in.tum.de>
  */
 
-#include "WavePropagation.h"
+#include "WavePropagation.hpp"
 
 T WavePropagation::computeNumericalFluxes()
 {

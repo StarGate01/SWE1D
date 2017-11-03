@@ -34,16 +34,16 @@
  * @author Sebastian Rettenberger <rettenbs@in.tum.de>
  */
 
-#include "types.h"
-#include "WavePropagation.h"
-#include "scenarios/dambreak.h"
+#include <cstring>
+#include "types.hpp"
+#include "WavePropagation.hpp"
+#include "writer/VtkWriter.hpp"
+#include "tools/args.hpp"
+
+#include "scenarios/dambreak.hpp"
 //#include "scenarios/shockshock.h"
 //#include "scenarios/rarerare.h"
 //#include "writer/ConsoleWriter.h"
-#include "writer/VtkWriter.h"
-#include "tools/args.h"
-
-#include <cstring>
 
 int main(int argc, char** argv)
 {
@@ -51,7 +51,7 @@ int main(int argc, char** argv)
 	tools::Args args(argc, argv);
 
 	// Scenario
-	scenarios::DamBreak scenario(args.size());
+	scenarios::DamBreak scenario(args.size()); //, args.options());
 
 	// Allocate memory
 	// Water height
@@ -60,7 +60,8 @@ int main(int argc, char** argv)
 	T *hu = new T[args.size()+2];
 
 	// Initialize water height and momentum
-	for (unsigned int i = 0; i < args.size()+2; i++){
+	for (unsigned int i = 0; i < args.size()+2; i++)
+	{
 		h[i] = scenario.getHeight(i);
 		hu[i] = scenario.getSpeed(i);
 	}
@@ -80,23 +81,19 @@ int main(int argc, char** argv)
 
 	writer.write(t, h, hu, args.size());
 
-	for (unsigned int i = 0; i < args.timeSteps(); i++) {
+	for (unsigned int i = 0; i < args.timeSteps(); i++) 
+	{
 		// Do one time step
 		tools::Logger::logger << "Computing timestep " << i
 				<< " at time " << t << std::endl;
-
 		// Update boundaries
 		wavePropagation.setOutflowBoundaryConditions();
-
 		// Compute numerical flux on each edge
 		T maxTimeStep = wavePropagation.computeNumericalFluxes();
-
 		// Update unknowns from net updates
 		wavePropagation.updateUnknowns(maxTimeStep);
-
 		// Update time
 		t += maxTimeStep;
-
 		// Write new values
 		writer.write(t, h, hu, args.size());
 	}

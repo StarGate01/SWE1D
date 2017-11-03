@@ -34,6 +34,6 @@
  * @author Sebastian Rettenberger <rettenbs@in.tum.de>
  */
 
-#include "logger.h"
+#include "logger.hpp"
 
 tools::Logger tools::Logger::logger;

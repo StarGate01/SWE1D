@@ -45,7 +45,7 @@ def allInDir(dir, files):
 
 # List of all source files
 sourceFiles = ['main.cpp', 'WavePropagation.cpp']
-sourceFiles += allInDir('tools', ['args.cpp', 'logger.cpp'])
+sourceFiles += allInDir('tools', ['logger.cpp'])
 
 # Add source files to scons env
 for f in sourceFiles:

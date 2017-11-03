@@ -35,5 +35,11 @@
         "typeinfo": "cpp",
         "utility": "cpp"
     },
-    "spellright.language": "de"
+    "spellright.language": "en",
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "bibtex"
+    ]
 }

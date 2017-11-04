@@ -40,9 +40,9 @@
 #include "writer/VtkWriter.hpp"
 #include "tools/args.hpp"
 
-#include "scenarios/dambreak.hpp"
-//#include "scenarios/shockshock.h"
-//#include "scenarios/rarerare.h"
+//#include "scenarios/dambreak.hpp"
+//#include "scenarios/shockshock.hpp"
+#include "scenarios/rarerare.hpp"
 //#include "writer/ConsoleWriter.h"
 
 int main(int argc, char** argv)
@@ -51,7 +51,7 @@ int main(int argc, char** argv)
 	tools::Args args(argc, argv);
 
 	// Scenario
-	scenarios::DamBreak scenario(args.size()); //, args.options());
+	scenarios::RareRare scenario(args.size()); //, args.options());
 
 	// Allocate memory
 	// Water height

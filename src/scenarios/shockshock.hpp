@@ -23,7 +23,7 @@ namespace scenarios
 		/** initial water height at all cells */
 		const signed int m_height = 10;
 		/** initial water speed left of xdis */
-		const signed int m_leftSpeed = 10;
+		const signed int m_leftSpeed = 50;
 		/** initial water speed right of xdis */
 		const signed int m_rightSpeed = -10;
 

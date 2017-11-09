@@ -36,6 +36,7 @@
 
 #include "WavePropagation.hpp"
 
+
 T WavePropagation::computeNumericalFluxes()
 {
 	float maxWaveSpeed = 0.f;
@@ -47,11 +48,10 @@ T WavePropagation::computeNumericalFluxes()
 		// Compute net updates
 		m_solver.computeNetUpdates( m_h[i-1], m_h[i],
 				m_hu[i-1], m_hu[i],
-				0.f, 0.f,	// Bathymetry
+				m_b[i-1], m_b[i],	// Bathymetry
 				m_hNetUpdatesLeft[i-1], m_hNetUpdatesRight[i-1],
 				m_huNetUpdatesLeft[i-1], m_huNetUpdatesRight[i-1],
 				maxEdgeSpeed );
-
 		// Update maxWaveSpeed
 		if (maxEdgeSpeed > maxWaveSpeed)
 			maxWaveSpeed = maxEdgeSpeed;

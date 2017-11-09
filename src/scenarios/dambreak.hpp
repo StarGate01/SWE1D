@@ -53,13 +53,24 @@ namespace scenarios
 		/** Point of collision (here: in the middle) */
 		const unsigned int m_xdis = m_size/2;
 		/** initial water height left of xdis*/
-		const float m_leftHeight = 15;
+		const float m_leftHeight = 25;
 		/** initial water height righr of xdis*/
-		const float m_rightHeight = 10;
+		const float m_rightHeight = 5;
 		/** initial water speed left of xdis */
 		const float m_leftSpeed = 0;
 		/** initial water speed right of xdis */
 		const float m_rightSpeed = 0;
+
+		/** Point of bathymetry change on the left*/
+		const unsigned int m_lbdis = 40;
+		/** Point of bathymetry change on the left*/
+		const unsigned int m_rbdis = 80;
+		/** initial bathymetry left of lbdis */
+		const float m_leftB = 20;
+		/** initial bathymetry between lbdis and rbdis */
+		const float m_middleB = 00;
+		/** initial bathymetryright right of rbdis */
+		const float m_rightB = 10;
 
 		/** Additional options */
 		//std::vector<int> m_options;
@@ -91,6 +102,19 @@ namespace scenarios
 				return m_leftSpeed;
 
 			return m_rightSpeed; 
+		}
+
+		/**
+		 * @return Initial bathymetry at pos
+		 */
+		float getBathy(unsigned int pos)
+		{
+			if (pos <= m_lbdis)
+				return m_leftB;
+			else if (pos <= m_rbdis)
+				return m_middleB;
+
+			return m_rightB; 
 		}
 
 		/**

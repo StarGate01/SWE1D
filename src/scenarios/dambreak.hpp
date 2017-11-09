@@ -55,7 +55,7 @@ namespace scenarios
 		/** initial water height left of xdis*/
 		const float m_leftHeight = 25;
 		/** initial water height righr of xdis*/
-		const float m_rightHeight = 5;
+		const float m_rightHeight = 10;
 		/** initial water speed left of xdis */
 		const float m_leftSpeed = 0;
 		/** initial water speed right of xdis */
@@ -66,11 +66,11 @@ namespace scenarios
 		/** Point of bathymetry change on the left*/
 		const unsigned int m_rbdis = 80;
 		/** initial bathymetry left of lbdis */
-		const float m_leftB = 20;
+		const float m_leftB = -5;
 		/** initial bathymetry between lbdis and rbdis */
-		const float m_middleB = 00;
+		const float m_middleB = -30;
 		/** initial bathymetryright right of rbdis */
-		const float m_rightB = 10;
+		const float m_rightB = -10;
 
 		/** Additional options */
 		//std::vector<int> m_options;

@@ -60,11 +60,16 @@ int main(int argc, char** argv)
 	T *hu = new T[args.size()+2];
 	//Bathymetry
 	T *b = new T[args.size()+2];
+	//Bathymetry with offset
+	T *b_offset = new T[args.size()+2];
+	// Water height (cache)
+	T *h_bup = new T[args.size()+2];
 
 	// Initialize water height and momentum
 	for (unsigned int i = 0; i < args.size()+2; i++)
 	{
 		h[i] = scenario.getHeight(i);
+		h_bup[i] = scenario.getHeight(i);
 		hu[i] = scenario.getSpeed(i);
 		b[i] = scenario.getBathy(i);
 	}
@@ -81,8 +86,11 @@ int main(int argc, char** argv)
 
 	// Current time of simulation
 	T t = 0;
-
-	writer.write(t, h, hu, b, args.size());
+	for (unsigned int i = 0; i < args.size()+2; i++)
+	{
+		b_offset[i] = b[i] + h_bup[i];
+	}
+	writer.write(t, h, hu, b_offset, args.size());
 
 	for (unsigned int i = 0; i < args.timeSteps(); i++) 
 	{
@@ -98,7 +106,11 @@ int main(int argc, char** argv)
 		// Update time
 		t += maxTimeStep;
 		// Write new values
-		writer.write(t, h, hu, b, args.size());
+		for (unsigned int i = 0; i < args.size()+2; i++)
+		{
+			b_offset[i] = b[i] + h_bup[i];
+		}
+		writer.write(t, h, hu, b_offset, args.size());
 	}
 
 	// Free allocated memory

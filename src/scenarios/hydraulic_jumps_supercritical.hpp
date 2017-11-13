@@ -61,6 +61,12 @@ namespace scenarios
 			return 1000.f / m_size;
 		}
 
+		T getBathy(unsigned int pos)
+		{
+			if(pos > 8 && pos < 12)
+				return -0.13-0.05*(pos-10)*(pos-10);
+			return -0.33;
+		}
 	};
 
 }

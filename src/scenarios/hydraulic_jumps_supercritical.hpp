@@ -61,6 +61,9 @@ namespace scenarios
 			return 1000.f / m_size;
 		}
 
+		/**
+		 * @return Bathymetrie according to assignment
+		*/
 		T getBathy(unsigned int pos)
 		{
 			if(pos > 8 && pos < 12)

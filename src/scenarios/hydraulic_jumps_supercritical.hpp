@@ -11,7 +11,7 @@
 namespace scenarios
 {
 
-	class ShockShock
+	class HydraulicSup
 	{
 
 	private:
@@ -29,7 +29,7 @@ namespace scenarios
 
 	public:
 
-		ShockShock(unsigned int size)
+		HydraulicSup(unsigned int size)
 			: m_size(size)
 		{
 		}
@@ -39,16 +39,15 @@ namespace scenarios
 		/**
 		 * @return Initial water height at pos
 		 */
-		unsigned int getHeight(unsigned int pos)
+		T getHeight(unsigned int pos)
 		{
-			//TODO: Change to correct height
-			return m_height;
+			return (pos >= 0 && pos <=25) ? -(getBathy(pos)) : 0;
 		}
 
 		/**
 		 * @return Initial water speed at pos
 		 */
-		signed int getSpeed(unsigned int pos)
+		T getSpeed(unsigned int pos)
 		{
 			return (pos >= 0 && pos <=25) ? 0.18 : 0;
 		}
@@ -62,12 +61,12 @@ namespace scenarios
 		}
 
 		/**
-		 * @return Bathymetrie according to assignment
+		 * @return Bathymetrie according to assignmentub
 		*/
 		T getBathy(unsigned int pos)
 		{
 			if(pos > 8 && pos < 12)
-				return -0.13-0.05*(pos-10)*(pos-10);
+				return -0.13-(0.05*((pos-10)*(pos-10)));
 			return -0.33;
 		}
 	};

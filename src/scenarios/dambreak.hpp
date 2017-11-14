@@ -62,9 +62,9 @@ namespace scenarios
 		const float m_rightSpeed = 0;
 
 		/** Point of bathymetry change on the left*/
-		const unsigned int m_lbdis = 40;
+		const unsigned int m_lbdis = 10;
 		/** Point of bathymetry change on the left*/
-		const unsigned int m_rbdis = 80;
+		const unsigned int m_rbdis = 20;
 		/** initial bathymetry left of lbdis */
 		const float m_leftB = -5;
 		/** initial bathymetry between lbdis and rbdis */

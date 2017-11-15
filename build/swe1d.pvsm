@@ -504,7 +504,7 @@
     </Proxy>
     <Proxy group="sources" type="PVDReader" id="7554" servers="1">
       <Property name="FileName" id="7554.FileName" number_of_elements="1">
-        <Element index="0" value="C:\Users\Christoph\Documents\Studium\5_WS1718\TSISIM\Tutorium\SWE1D\build\swe1d.vtp"/>
+        <Element index="0" value="swe1d.vtp"/>
         <Domain name="files" id="7554.FileName.files"/>
       </Property>
       <Property name="TimestepValues" id="7554.TimestepValues" number_of_elements="501">
@@ -1013,7 +1013,7 @@
     </Proxy>
     <Proxy group="sources" type="PVDReader" id="13377" servers="1">
       <Property name="FileName" id="13377.FileName" number_of_elements="1">
-        <Element index="0" value="C:\Users\Christoph\Documents\Studium\5_WS1718\TSISIM\Tutorium\SWE1D\build\swe1d.vtp"/>
+        <Element index="0" value="swe1d.vtp"/>
         <Domain name="files" id="13377.FileName.files"/>
       </Property>
       <Property name="TimestepValues" id="13377.TimestepValues" number_of_elements="501">

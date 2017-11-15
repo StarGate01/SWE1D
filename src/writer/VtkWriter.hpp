@@ -1,37 +1,6 @@
 /**
- * @file
- *  This file is part of SWE1D
- *
- *  SWE1D is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  SWE1D is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with SWE1D.  If not, see <http://www.gnu.org/licenses/>.
- *
- *  Diese Datei ist Teil von SWE1D.
- *
- *  SWE1D ist Freie Software: Sie koennen es unter den Bedingungen
- *  der GNU General Public License, wie von der Free Software Foundation,
- *  Version 3 der Lizenz oder (nach Ihrer Option) jeder spaeteren
- *  veroeffentlichten Version, weiterverbreiten und/oder modifizieren.
- *
- *  SWE1D wird in der Hoffnung, dass es nuetzlich sein wird, aber
- *  OHNE JEDE GEWAEHELEISTUNG, bereitgestellt; sogar ohne die implizite
- *  Gewaehrleistung der MARKTFAEHIGKEIT oder EIGNUNG FUER EINEN BESTIMMTEN
- *  ZWECK. Siehe die GNU General Public License fuer weitere Details.
- *
- *  Sie sollten eine Kopie der GNU General Public License zusammen mit diesem
- *  Programm erhalten haben. Wenn nicht, siehe <http://www.gnu.org/licenses/>.
- * 
- * @copyright 2013 Technische Universitaet Muenchen
- * @author Sebastian Rettenberger <rettenbs@in.tum.de>
+ * @file VtkWriter.hpp
+ * @brief Writes data to a XML-based VTK file
  */
 
 #ifndef VTKWRITER_H_
@@ -47,29 +16,34 @@ namespace writer
 {
 
 	/**
-	 * A writer class that generates vtk files
+	 * @brief A writer class that generates vtk files
 	 */
 	class VtkWriter
 	{
 
 	private:
 
-		// base name of the vtp collectiond and vtk files
+		/** @brief Base name of the vtp collectiond and vtk files */
 		std::string m_basename;
 
-		// cell size
+		/** @brief Cell size */
 		T m_cellSize;
 
-		// current time step
+		/** @brief Current time step */
 		unsigned int m_timeStep;
 
-		// vtp stream
+		/** @brief VTP stream */
 		std::ofstream *m_vtpFile;
 
 
 	public:
 
-		// constructor
+		/**
+		 * @brief Constructor
+		 * 
+		 * @param basename The filename of the output file without extension
+		 * @param cellSize The size of a cell
+		 */
 		VtkWriter( const std::string& basename = "swe1d", const T cellSize = 1) : m_basename(basename), m_cellSize(cellSize), m_timeStep(0)
 		{
 			// initialize vtp stream
@@ -84,7 +58,9 @@ namespace writer
 				<< "<Collection>" << std::endl;
 		}
 
-		// destructor (free memory)
+		/**
+		 * @brief Destructor
+		 */
 		~VtkWriter() {
 			// close vtp file
 			*m_vtpFile
@@ -94,7 +70,7 @@ namespace writer
 		}
 
 		/**
-		 * Writes all values to vtk file
+		 * @brief Writes all values to vtk file
 		 *
 		 * @param time Current time
 		 * @param h Current height
@@ -186,13 +162,14 @@ namespace writer
 	private:
 
 		/**
+		 * @brief Generates a vtr file name
+		 * 
 		 * @return The generated filename containing the time step and the real name
 		 */
 		std::string generateFileName()
 		{
 			std::ostringstream name;
 			name << m_basename << '_' << m_timeStep << ".vtr";
-
 			return name.str();
 		}
 		

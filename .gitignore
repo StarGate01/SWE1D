@@ -2,6 +2,7 @@
 build/*.vtr
 build/*.vtp
 build/*SWE1D
+documentation/build
 
 # Eclipse files/folders
 .cproject

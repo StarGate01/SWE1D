@@ -55,8 +55,8 @@
         <Proxy value="259"/>
       </Property>
       <Property name="ViewModules" id="263.ViewModules" number_of_elements="2">
-        <Proxy value="7635"/>
-        <Proxy value="10649"/>
+        <Proxy value="4899"/>
+        <Proxy value="4933"/>
         <Domain name="groups" id="263.ViewModules.groups"/>
       </Property>
     </Proxy>
@@ -100,30 +100,30 @@
         <Domain name="bool" id="265.UseAnimationTime.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="ViewLayout" id="7633" servers="16">
-      <Property name="ShowWindowDecorations" id="7633.ShowWindowDecorations" number_of_elements="1">
+    <Proxy group="misc" type="ViewLayout" id="4934" servers="16">
+      <Property name="ShowWindowDecorations" id="4934.ShowWindowDecorations" number_of_elements="1">
         <Element index="0" value="1"/>
       </Property>
       <Layout number_of_elements="3">
-        <Item direction="1" fraction="0.5" view="0"/>
-        <Item direction="0" fraction="0.5" view="7635"/>
-        <Item direction="0" fraction="0.5" view="10649"/>
+        <Item direction="1" fraction="0.671446" view="0"/>
+        <Item direction="0" fraction="0.5" view="4899"/>
+        <Item direction="0" fraction="0.5" view="4933"/>
       </Layout>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="13388" servers="16">
-      <Property name="Source" id="13388.Source" number_of_elements="1">
-        <Proxy value="13377"/>
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="4936" servers="16">
+      <Property name="Source" id="4936.Source" number_of_elements="1">
+        <Proxy value="4866"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="7566" servers="16">
-      <Property name="Source" id="7566.Source" number_of_elements="1">
-        <Proxy value="7554"/>
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="4935" servers="16">
+      <Property name="Source" id="4935.Source" number_of_elements="1">
+        <Proxy value="4900"/>
       </Property>
     </Proxy>
-    <Proxy group="representations" type="XYChartRepresentation" id="7669" servers="21">
-      <Property name="AttributeType" id="7669.AttributeType" number_of_elements="1">
+    <Proxy group="representations" type="XYChartRepresentation" id="4888" servers="21">
+      <Property name="AttributeType" id="4888.AttributeType" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="enum" id="7669.AttributeType.enum">
+        <Domain name="enum" id="4888.AttributeType.enum">
           <Entry value="0" text="Point Data"/>
           <Entry value="1" text="Cell Data"/>
           <Entry value="2" text="Field Data"/>
@@ -132,21 +132,21 @@
           <Entry value="6" text="Row Data"/>
         </Domain>
       </Property>
-      <Property name="Color" id="7669.Color" number_of_elements="3">
+      <Property name="Color" id="4888.Color" number_of_elements="3">
         <Element index="0" value="1"/>
         <Element index="1" value="0"/>
         <Element index="2" value="1"/>
-        <Domain name="range" id="7669.Color.range"/>
+        <Domain name="range" id="4888.Color.range"/>
       </Property>
-      <Property name="CompositeDataSetIndex" id="7669.CompositeDataSetIndex" number_of_elements="1">
+      <Property name="CompositeDataSetIndex" id="4888.CompositeDataSetIndex" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="tree" id="7669.CompositeDataSetIndex.tree"/>
+        <Domain name="tree" id="4888.CompositeDataSetIndex.tree"/>
       </Property>
-      <Property name="Input" id="7669.Input" number_of_elements="1">
-        <Proxy value="7554" output_port="0"/>
-        <Domain name="input_type" id="7669.Input.input_type"/>
+      <Property name="Input" id="4888.Input" number_of_elements="1">
+        <Proxy value="4866" output_port="0"/>
+        <Domain name="input_type" id="4888.Input.input_type"/>
       </Property>
-      <Property name="SeriesColor" id="7669.SeriesColor" number_of_elements="20">
+      <Property name="SeriesColor" id="4888.SeriesColor" number_of_elements="20">
         <Element index="0" value="b"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
@@ -167,7 +167,7 @@
         <Element index="17" value="1"/>
         <Element index="18" value="0"/>
         <Element index="19" value="0"/>
-        <Domain name="array_list" id="7669.SeriesColor.array_list">
+        <Domain name="array_list" id="4888.SeriesColor.array_list">
           <String text="b"/>
           <String text="b+h"/>
           <String text="f"/>
@@ -175,7 +175,7 @@
           <String text="hu"/>
         </Domain>
       </Property>
-      <Property name="SeriesLabel" id="7669.SeriesLabel" number_of_elements="10">
+      <Property name="SeriesLabel" id="4888.SeriesLabel" number_of_elements="10">
         <Element index="0" value="b"/>
         <Element index="1" value="b"/>
         <Element index="2" value="b+h"/>
@@ -186,7 +186,7 @@
         <Element index="7" value="h"/>
         <Element index="8" value="hu"/>
         <Element index="9" value="hu"/>
-        <Domain name="array_list" id="7669.SeriesLabel.array_list">
+        <Domain name="array_list" id="4888.SeriesLabel.array_list">
           <String text="b"/>
           <String text="b+h"/>
           <String text="f"/>
@@ -194,10 +194,10 @@
           <String text="hu"/>
         </Domain>
       </Property>
-      <Property name="SeriesLabelPrefix" id="7669.SeriesLabelPrefix" number_of_elements="1">
+      <Property name="SeriesLabelPrefix" id="4888.SeriesLabelPrefix" number_of_elements="1">
         <Element index="0" value=""/>
       </Property>
-      <Property name="SeriesLineStyle" id="7669.SeriesLineStyle" number_of_elements="10">
+      <Property name="SeriesLineStyle" id="4888.SeriesLineStyle" number_of_elements="10">
         <Element index="0" value="b"/>
         <Element index="1" value="1"/>
         <Element index="2" value="b+h"/>
@@ -208,7 +208,7 @@
         <Element index="7" value="1"/>
         <Element index="8" value="hu"/>
         <Element index="9" value="1"/>
-        <Domain name="array_list" id="7669.SeriesLineStyle.array_list">
+        <Domain name="array_list" id="4888.SeriesLineStyle.array_list">
           <String text="b"/>
           <String text="b+h"/>
           <String text="f"/>
@@ -216,7 +216,7 @@
           <String text="hu"/>
         </Domain>
       </Property>
-      <Property name="SeriesLineThickness" id="7669.SeriesLineThickness" number_of_elements="10">
+      <Property name="SeriesLineThickness" id="4888.SeriesLineThickness" number_of_elements="10">
         <Element index="0" value="b"/>
         <Element index="1" value="2"/>
         <Element index="2" value="b+h"/>
@@ -227,7 +227,7 @@
         <Element index="7" value="2"/>
         <Element index="8" value="hu"/>
         <Element index="9" value="2"/>
-        <Domain name="array_list" id="7669.SeriesLineThickness.array_list">
+        <Domain name="array_list" id="4888.SeriesLineThickness.array_list">
           <String text="b"/>
           <String text="b+h"/>
           <String text="f"/>
@@ -235,7 +235,7 @@
           <String text="hu"/>
         </Domain>
       </Property>
-      <Property name="SeriesMarkerStyle" id="7669.SeriesMarkerStyle" number_of_elements="10">
+      <Property name="SeriesMarkerStyle" id="4888.SeriesMarkerStyle" number_of_elements="10">
         <Element index="0" value="b"/>
         <Element index="1" value="0"/>
         <Element index="2" value="b+h"/>
@@ -246,7 +246,7 @@
         <Element index="7" value="0"/>
         <Element index="8" value="hu"/>
         <Element index="9" value="0"/>
-        <Domain name="array_list" id="7669.SeriesMarkerStyle.array_list">
+        <Domain name="array_list" id="4888.SeriesMarkerStyle.array_list">
           <String text="b"/>
           <String text="b+h"/>
           <String text="f"/>
@@ -254,7 +254,7 @@
           <String text="hu"/>
         </Domain>
       </Property>
-      <Property name="SeriesPlotCorner" id="7669.SeriesPlotCorner" number_of_elements="10">
+      <Property name="SeriesPlotCorner" id="4888.SeriesPlotCorner" number_of_elements="10">
         <Element index="0" value="b"/>
         <Element index="1" value="0"/>
         <Element index="2" value="b+h"/>
@@ -265,7 +265,7 @@
         <Element index="7" value="0"/>
         <Element index="8" value="hu"/>
         <Element index="9" value="0"/>
-        <Domain name="array_list" id="7669.SeriesPlotCorner.array_list">
+        <Domain name="array_list" id="4888.SeriesPlotCorner.array_list">
           <String text="b"/>
           <String text="b+h"/>
           <String text="f"/>
@@ -273,7 +273,7 @@
           <String text="hu"/>
         </Domain>
       </Property>
-      <Property name="SeriesVisibility" id="7669.SeriesVisibility" number_of_elements="10">
+      <Property name="SeriesVisibility" id="4888.SeriesVisibility" number_of_elements="10">
         <Element index="0" value="b"/>
         <Element index="1" value="1"/>
         <Element index="2" value="b+h"/>
@@ -284,7 +284,7 @@
         <Element index="7" value="0"/>
         <Element index="8" value="hu"/>
         <Element index="9" value="1"/>
-        <Domain name="array_list" id="7669.SeriesVisibility.array_list">
+        <Domain name="array_list" id="4888.SeriesVisibility.array_list">
           <String text="b"/>
           <String text="b+h"/>
           <String text="f"/>
@@ -292,17 +292,17 @@
           <String text="hu"/>
         </Domain>
       </Property>
-      <Property name="UseIndexForXAxis" id="7669.UseIndexForXAxis" number_of_elements="1">
+      <Property name="UseIndexForXAxis" id="4888.UseIndexForXAxis" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="7669.UseIndexForXAxis.bool"/>
+        <Domain name="bool" id="4888.UseIndexForXAxis.bool"/>
       </Property>
-      <Property name="Visibility" id="7669.Visibility" number_of_elements="1">
+      <Property name="Visibility" id="4888.Visibility" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="7669.Visibility.bool"/>
+        <Domain name="bool" id="4888.Visibility.bool"/>
       </Property>
-      <Property name="XArrayName" id="7669.XArrayName" number_of_elements="1">
+      <Property name="XArrayName" id="4888.XArrayName" number_of_elements="1">
         <Element index="0" value="b"/>
-        <Domain name="array_list" id="7669.XArrayName.array_list">
+        <Domain name="array_list" id="4888.XArrayName.array_list">
           <String text="b"/>
           <String text="b+h"/>
           <String text="f"/>
@@ -311,10 +311,10 @@
         </Domain>
       </Property>
     </Proxy>
-    <Proxy group="representations" type="XYChartRepresentation" id="13400" servers="21">
-      <Property name="AttributeType" id="13400.AttributeType" number_of_elements="1">
+    <Proxy group="representations" type="XYChartRepresentation" id="4922" servers="21">
+      <Property name="AttributeType" id="4922.AttributeType" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="enum" id="13400.AttributeType.enum">
+        <Domain name="enum" id="4922.AttributeType.enum">
           <Entry value="0" text="Point Data"/>
           <Entry value="1" text="Cell Data"/>
           <Entry value="2" text="Field Data"/>
@@ -323,21 +323,21 @@
           <Entry value="6" text="Row Data"/>
         </Domain>
       </Property>
-      <Property name="Color" id="13400.Color" number_of_elements="3">
+      <Property name="Color" id="4922.Color" number_of_elements="3">
         <Element index="0" value="1"/>
         <Element index="1" value="0"/>
         <Element index="2" value="1"/>
-        <Domain name="range" id="13400.Color.range"/>
+        <Domain name="range" id="4922.Color.range"/>
       </Property>
-      <Property name="CompositeDataSetIndex" id="13400.CompositeDataSetIndex" number_of_elements="1">
+      <Property name="CompositeDataSetIndex" id="4922.CompositeDataSetIndex" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="tree" id="13400.CompositeDataSetIndex.tree"/>
+        <Domain name="tree" id="4922.CompositeDataSetIndex.tree"/>
       </Property>
-      <Property name="Input" id="13400.Input" number_of_elements="1">
-        <Proxy value="13377" output_port="0"/>
-        <Domain name="input_type" id="13400.Input.input_type"/>
+      <Property name="Input" id="4922.Input" number_of_elements="1">
+        <Proxy value="4900" output_port="0"/>
+        <Domain name="input_type" id="4922.Input.input_type"/>
       </Property>
-      <Property name="SeriesColor" id="13400.SeriesColor" number_of_elements="20">
+      <Property name="SeriesColor" id="4922.SeriesColor" number_of_elements="20">
         <Element index="0" value="b"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
@@ -358,7 +358,7 @@
         <Element index="17" value="1"/>
         <Element index="18" value="0"/>
         <Element index="19" value="0"/>
-        <Domain name="array_list" id="13400.SeriesColor.array_list">
+        <Domain name="array_list" id="4922.SeriesColor.array_list">
           <String text="b"/>
           <String text="b+h"/>
           <String text="f"/>
@@ -366,7 +366,7 @@
           <String text="hu"/>
         </Domain>
       </Property>
-      <Property name="SeriesLabel" id="13400.SeriesLabel" number_of_elements="10">
+      <Property name="SeriesLabel" id="4922.SeriesLabel" number_of_elements="10">
         <Element index="0" value="b"/>
         <Element index="1" value="b"/>
         <Element index="2" value="b+h"/>
@@ -377,7 +377,7 @@
         <Element index="7" value="h"/>
         <Element index="8" value="hu"/>
         <Element index="9" value="hu"/>
-        <Domain name="array_list" id="13400.SeriesLabel.array_list">
+        <Domain name="array_list" id="4922.SeriesLabel.array_list">
           <String text="b"/>
           <String text="b+h"/>
           <String text="f"/>
@@ -385,10 +385,10 @@
           <String text="hu"/>
         </Domain>
       </Property>
-      <Property name="SeriesLabelPrefix" id="13400.SeriesLabelPrefix" number_of_elements="1">
+      <Property name="SeriesLabelPrefix" id="4922.SeriesLabelPrefix" number_of_elements="1">
         <Element index="0" value=""/>
       </Property>
-      <Property name="SeriesLineStyle" id="13400.SeriesLineStyle" number_of_elements="10">
+      <Property name="SeriesLineStyle" id="4922.SeriesLineStyle" number_of_elements="10">
         <Element index="0" value="b"/>
         <Element index="1" value="1"/>
         <Element index="2" value="b+h"/>
@@ -399,7 +399,7 @@
         <Element index="7" value="1"/>
         <Element index="8" value="hu"/>
         <Element index="9" value="1"/>
-        <Domain name="array_list" id="13400.SeriesLineStyle.array_list">
+        <Domain name="array_list" id="4922.SeriesLineStyle.array_list">
           <String text="b"/>
           <String text="b+h"/>
           <String text="f"/>
@@ -407,7 +407,7 @@
           <String text="hu"/>
         </Domain>
       </Property>
-      <Property name="SeriesLineThickness" id="13400.SeriesLineThickness" number_of_elements="10">
+      <Property name="SeriesLineThickness" id="4922.SeriesLineThickness" number_of_elements="10">
         <Element index="0" value="b"/>
         <Element index="1" value="2"/>
         <Element index="2" value="b+h"/>
@@ -418,7 +418,7 @@
         <Element index="7" value="2"/>
         <Element index="8" value="hu"/>
         <Element index="9" value="2"/>
-        <Domain name="array_list" id="13400.SeriesLineThickness.array_list">
+        <Domain name="array_list" id="4922.SeriesLineThickness.array_list">
           <String text="b"/>
           <String text="b+h"/>
           <String text="f"/>
@@ -426,7 +426,7 @@
           <String text="hu"/>
         </Domain>
       </Property>
-      <Property name="SeriesMarkerStyle" id="13400.SeriesMarkerStyle" number_of_elements="10">
+      <Property name="SeriesMarkerStyle" id="4922.SeriesMarkerStyle" number_of_elements="10">
         <Element index="0" value="b"/>
         <Element index="1" value="0"/>
         <Element index="2" value="b+h"/>
@@ -437,7 +437,7 @@
         <Element index="7" value="0"/>
         <Element index="8" value="hu"/>
         <Element index="9" value="0"/>
-        <Domain name="array_list" id="13400.SeriesMarkerStyle.array_list">
+        <Domain name="array_list" id="4922.SeriesMarkerStyle.array_list">
           <String text="b"/>
           <String text="b+h"/>
           <String text="f"/>
@@ -445,7 +445,7 @@
           <String text="hu"/>
         </Domain>
       </Property>
-      <Property name="SeriesPlotCorner" id="13400.SeriesPlotCorner" number_of_elements="10">
+      <Property name="SeriesPlotCorner" id="4922.SeriesPlotCorner" number_of_elements="10">
         <Element index="0" value="b"/>
         <Element index="1" value="0"/>
         <Element index="2" value="b+h"/>
@@ -456,7 +456,7 @@
         <Element index="7" value="0"/>
         <Element index="8" value="hu"/>
         <Element index="9" value="0"/>
-        <Domain name="array_list" id="13400.SeriesPlotCorner.array_list">
+        <Domain name="array_list" id="4922.SeriesPlotCorner.array_list">
           <String text="b"/>
           <String text="b+h"/>
           <String text="f"/>
@@ -464,7 +464,7 @@
           <String text="hu"/>
         </Domain>
       </Property>
-      <Property name="SeriesVisibility" id="13400.SeriesVisibility" number_of_elements="10">
+      <Property name="SeriesVisibility" id="4922.SeriesVisibility" number_of_elements="10">
         <Element index="0" value="b"/>
         <Element index="1" value="0"/>
         <Element index="2" value="b+h"/>
@@ -475,7 +475,7 @@
         <Element index="7" value="0"/>
         <Element index="8" value="hu"/>
         <Element index="9" value="0"/>
-        <Domain name="array_list" id="13400.SeriesVisibility.array_list">
+        <Domain name="array_list" id="4922.SeriesVisibility.array_list">
           <String text="b"/>
           <String text="b+h"/>
           <String text="f"/>
@@ -483,17 +483,17 @@
           <String text="hu"/>
         </Domain>
       </Property>
-      <Property name="UseIndexForXAxis" id="13400.UseIndexForXAxis" number_of_elements="1">
+      <Property name="UseIndexForXAxis" id="4922.UseIndexForXAxis" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="13400.UseIndexForXAxis.bool"/>
+        <Domain name="bool" id="4922.UseIndexForXAxis.bool"/>
       </Property>
-      <Property name="Visibility" id="13400.Visibility" number_of_elements="1">
+      <Property name="Visibility" id="4922.Visibility" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="13400.Visibility.bool"/>
+        <Domain name="bool" id="4922.Visibility.bool"/>
       </Property>
-      <Property name="XArrayName" id="13400.XArrayName" number_of_elements="1">
+      <Property name="XArrayName" id="4922.XArrayName" number_of_elements="1">
         <Element index="0" value="b"/>
-        <Domain name="array_list" id="13400.XArrayName.array_list">
+        <Domain name="array_list" id="4922.XArrayName.array_list">
           <String text="b"/>
           <String text="b+h"/>
           <String text="f"/>
@@ -502,12 +502,12 @@
         </Domain>
       </Property>
     </Proxy>
-    <Proxy group="sources" type="PVDReader" id="7554" servers="1">
-      <Property name="FileName" id="7554.FileName" number_of_elements="1">
+    <Proxy group="sources" type="PVDReader" id="4866" servers="1">
+      <Property name="FileName" id="4866.FileName" number_of_elements="1">
         <Element index="0" value="swe1d.vtp"/>
-        <Domain name="files" id="7554.FileName.files"/>
+        <Domain name="files" id="4866.FileName.files"/>
       </Property>
-      <Property name="TimestepValues" id="7554.TimestepValues" number_of_elements="501">
+      <Property name="TimestepValues" id="4866.TimestepValues" number_of_elements="501">
         <Element index="0" value="0"/>
         <Element index="1" value="0.201927"/>
         <Element index="2" value="0.403855"/>
@@ -1011,12 +1011,12 @@
         <Element index="500" value="88.9885"/>
       </Property>
     </Proxy>
-    <Proxy group="sources" type="PVDReader" id="13377" servers="1">
-      <Property name="FileName" id="13377.FileName" number_of_elements="1">
+    <Proxy group="sources" type="PVDReader" id="4900" servers="1">
+      <Property name="FileName" id="4900.FileName" number_of_elements="1">
         <Element index="0" value="swe1d.vtp"/>
-        <Domain name="files" id="13377.FileName.files"/>
+        <Domain name="files" id="4900.FileName.files"/>
       </Property>
-      <Property name="TimestepValues" id="13377.TimestepValues" number_of_elements="501">
+      <Property name="TimestepValues" id="4900.TimestepValues" number_of_elements="501">
         <Element index="0" value="0"/>
         <Element index="1" value="0.201927"/>
         <Element index="2" value="0.403855"/>
@@ -1534,8 +1534,8 @@
         <Element index="1" value="88.9885"/>
       </Property>
       <Property name="TimeSources" id="259.TimeSources" number_of_elements="2">
-        <Proxy value="7554"/>
-        <Proxy value="13377"/>
+        <Proxy value="4866"/>
+        <Proxy value="4900"/>
       </Property>
       <Property name="TimestepValues" id="259.TimestepValues" number_of_elements="501">
         <Element index="0" value="0"/>
@@ -2041,273 +2041,273 @@
         <Element index="500" value="88.9885"/>
       </Property>
       <Property name="Views" id="259.Views" number_of_elements="2">
-        <Proxy value="7635"/>
-        <Proxy value="10649"/>
+        <Proxy value="4899"/>
+        <Proxy value="4933"/>
       </Property>
     </Proxy>
-    <Proxy group="views" type="XYChartView" id="7635" servers="21">
-      <Property name="BottomAxisColor" id="7635.BottomAxisColor" number_of_elements="3">
+    <Proxy group="views" type="XYChartView" id="4899" servers="21">
+      <Property name="BottomAxisColor" id="4899.BottomAxisColor" number_of_elements="3">
         <Element index="0" value="0"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
-        <Domain name="range" id="7635.BottomAxisColor.range"/>
+        <Domain name="range" id="4899.BottomAxisColor.range"/>
       </Property>
-      <Property name="BottomAxisGridColor" id="7635.BottomAxisGridColor" number_of_elements="3">
+      <Property name="BottomAxisGridColor" id="4899.BottomAxisGridColor" number_of_elements="3">
         <Element index="0" value="0.95"/>
         <Element index="1" value="0.95"/>
         <Element index="2" value="0.95"/>
-        <Domain name="range" id="7635.BottomAxisGridColor.range"/>
+        <Domain name="range" id="4899.BottomAxisGridColor.range"/>
       </Property>
-      <Property name="BottomAxisLabelBold" id="7635.BottomAxisLabelBold" number_of_elements="1">
+      <Property name="BottomAxisLabelBold" id="4899.BottomAxisLabelBold" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.BottomAxisLabelBold.bool"/>
+        <Domain name="bool" id="4899.BottomAxisLabelBold.bool"/>
       </Property>
-      <Property name="BottomAxisLabelColor" id="7635.BottomAxisLabelColor" number_of_elements="3">
+      <Property name="BottomAxisLabelColor" id="4899.BottomAxisLabelColor" number_of_elements="3">
         <Element index="0" value="0"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
-        <Domain name="range" id="7635.BottomAxisLabelColor.range"/>
+        <Domain name="range" id="4899.BottomAxisLabelColor.range"/>
       </Property>
-      <Property name="BottomAxisLabelFontFamily" id="7635.BottomAxisLabelFontFamily" number_of_elements="1">
+      <Property name="BottomAxisLabelFontFamily" id="4899.BottomAxisLabelFontFamily" number_of_elements="1">
         <Element index="0" value="Arial"/>
-        <Domain name="list" id="7635.BottomAxisLabelFontFamily.list">
+        <Domain name="list" id="4899.BottomAxisLabelFontFamily.list">
           <String text="Arial"/>
           <String text="Courier"/>
           <String text="Times"/>
         </Domain>
       </Property>
-      <Property name="BottomAxisLabelFontSize" id="7635.BottomAxisLabelFontSize" number_of_elements="1">
+      <Property name="BottomAxisLabelFontSize" id="4899.BottomAxisLabelFontSize" number_of_elements="1">
         <Element index="0" value="12"/>
       </Property>
-      <Property name="BottomAxisLabelItalic" id="7635.BottomAxisLabelItalic" number_of_elements="1">
+      <Property name="BottomAxisLabelItalic" id="4899.BottomAxisLabelItalic" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.BottomAxisLabelItalic.bool"/>
+        <Domain name="bool" id="4899.BottomAxisLabelItalic.bool"/>
       </Property>
-      <Property name="BottomAxisLabelNotation" id="7635.BottomAxisLabelNotation" number_of_elements="1">
+      <Property name="BottomAxisLabelNotation" id="4899.BottomAxisLabelNotation" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="enum" id="7635.BottomAxisLabelNotation.enum">
+        <Domain name="enum" id="4899.BottomAxisLabelNotation.enum">
           <Entry value="0" text="Mixed"/>
           <Entry value="1" text="Scientific"/>
           <Entry value="2" text="Fixed"/>
         </Domain>
       </Property>
-      <Property name="BottomAxisLabelPrecision" id="7635.BottomAxisLabelPrecision" number_of_elements="1">
+      <Property name="BottomAxisLabelPrecision" id="4899.BottomAxisLabelPrecision" number_of_elements="1">
         <Element index="0" value="2"/>
-        <Domain name="range" id="7635.BottomAxisLabelPrecision.range"/>
+        <Domain name="range" id="4899.BottomAxisLabelPrecision.range"/>
       </Property>
-      <Property name="BottomAxisLabels" id="7635.BottomAxisLabels">
-        <Domain name="scalar_range" id="7635.BottomAxisLabels.scalar_range"/>
+      <Property name="BottomAxisLabels" id="4899.BottomAxisLabels">
+        <Domain name="scalar_range" id="4899.BottomAxisLabels.scalar_range"/>
       </Property>
-      <Property name="BottomAxisLogScale" id="7635.BottomAxisLogScale" number_of_elements="1">
+      <Property name="BottomAxisLogScale" id="4899.BottomAxisLogScale" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.BottomAxisLogScale.bool"/>
+        <Domain name="bool" id="4899.BottomAxisLogScale.bool"/>
       </Property>
-      <Property name="BottomAxisRangeMaximum" id="7635.BottomAxisRangeMaximum" number_of_elements="1">
+      <Property name="BottomAxisRangeMaximum" id="4899.BottomAxisRangeMaximum" number_of_elements="1">
         <Element index="0" value="100"/>
       </Property>
-      <Property name="BottomAxisRangeMinimum" id="7635.BottomAxisRangeMinimum" number_of_elements="1">
+      <Property name="BottomAxisRangeMinimum" id="4899.BottomAxisRangeMinimum" number_of_elements="1">
         <Element index="0" value="0"/>
       </Property>
-      <Property name="BottomAxisTitle" id="7635.BottomAxisTitle" number_of_elements="1">
+      <Property name="BottomAxisTitle" id="4899.BottomAxisTitle" number_of_elements="1">
         <Element index="0" value="Position"/>
       </Property>
-      <Property name="BottomAxisTitleBold" id="7635.BottomAxisTitleBold" number_of_elements="1">
+      <Property name="BottomAxisTitleBold" id="4899.BottomAxisTitleBold" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="7635.BottomAxisTitleBold.bool"/>
+        <Domain name="bool" id="4899.BottomAxisTitleBold.bool"/>
       </Property>
-      <Property name="BottomAxisTitleColor" id="7635.BottomAxisTitleColor" number_of_elements="3">
+      <Property name="BottomAxisTitleColor" id="4899.BottomAxisTitleColor" number_of_elements="3">
         <Element index="0" value="0"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
-        <Domain name="range" id="7635.BottomAxisTitleColor.range"/>
+        <Domain name="range" id="4899.BottomAxisTitleColor.range"/>
       </Property>
-      <Property name="BottomAxisTitleFontFamily" id="7635.BottomAxisTitleFontFamily" number_of_elements="1">
+      <Property name="BottomAxisTitleFontFamily" id="4899.BottomAxisTitleFontFamily" number_of_elements="1">
         <Element index="0" value="Arial"/>
-        <Domain name="list" id="7635.BottomAxisTitleFontFamily.list">
+        <Domain name="list" id="4899.BottomAxisTitleFontFamily.list">
           <String text="Arial"/>
           <String text="Courier"/>
           <String text="Times"/>
         </Domain>
       </Property>
-      <Property name="BottomAxisTitleFontSize" id="7635.BottomAxisTitleFontSize" number_of_elements="1">
+      <Property name="BottomAxisTitleFontSize" id="4899.BottomAxisTitleFontSize" number_of_elements="1">
         <Element index="0" value="12"/>
       </Property>
-      <Property name="BottomAxisTitleItalic" id="7635.BottomAxisTitleItalic" number_of_elements="1">
+      <Property name="BottomAxisTitleItalic" id="4899.BottomAxisTitleItalic" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.BottomAxisTitleItalic.bool"/>
+        <Domain name="bool" id="4899.BottomAxisTitleItalic.bool"/>
       </Property>
-      <Property name="BottomAxisUseCustomLabels" id="7635.BottomAxisUseCustomLabels" number_of_elements="1">
+      <Property name="BottomAxisUseCustomLabels" id="4899.BottomAxisUseCustomLabels" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.BottomAxisUseCustomLabels.bool"/>
+        <Domain name="bool" id="4899.BottomAxisUseCustomLabels.bool"/>
       </Property>
-      <Property name="BottomAxisUseCustomRange" id="7635.BottomAxisUseCustomRange" number_of_elements="1">
+      <Property name="BottomAxisUseCustomRange" id="4899.BottomAxisUseCustomRange" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="7635.BottomAxisUseCustomRange.bool"/>
+        <Domain name="bool" id="4899.BottomAxisUseCustomRange.bool"/>
       </Property>
-      <Property name="CacheKey" id="7635.CacheKey" number_of_elements="1">
+      <Property name="CacheKey" id="4899.CacheKey" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="range" id="7635.CacheKey.range"/>
+        <Domain name="range" id="4899.CacheKey.range"/>
       </Property>
-      <Property name="ChartTitle" id="7635.ChartTitle" number_of_elements="1">
+      <Property name="ChartTitle" id="4899.ChartTitle" number_of_elements="1">
         <Element index="0" value="Water height, flux and bathymetry"/>
       </Property>
-      <Property name="ChartTitleAlignment" id="7635.ChartTitleAlignment" number_of_elements="1">
+      <Property name="ChartTitleAlignment" id="4899.ChartTitleAlignment" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="enum" id="7635.ChartTitleAlignment.enum">
+        <Domain name="enum" id="4899.ChartTitleAlignment.enum">
           <Entry value="0" text="Left"/>
           <Entry value="1" text="Center"/>
           <Entry value="2" text="Right"/>
         </Domain>
       </Property>
-      <Property name="ChartTitleBold" id="7635.ChartTitleBold" number_of_elements="1">
+      <Property name="ChartTitleBold" id="4899.ChartTitleBold" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.ChartTitleBold.bool"/>
+        <Domain name="bool" id="4899.ChartTitleBold.bool"/>
       </Property>
-      <Property name="ChartTitleColor" id="7635.ChartTitleColor" number_of_elements="3">
+      <Property name="ChartTitleColor" id="4899.ChartTitleColor" number_of_elements="3">
         <Element index="0" value="0"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
-        <Domain name="range" id="7635.ChartTitleColor.range"/>
+        <Domain name="range" id="4899.ChartTitleColor.range"/>
       </Property>
-      <Property name="ChartTitleFontFamily" id="7635.ChartTitleFontFamily" number_of_elements="1">
+      <Property name="ChartTitleFontFamily" id="4899.ChartTitleFontFamily" number_of_elements="1">
         <Element index="0" value="Arial"/>
-        <Domain name="list" id="7635.ChartTitleFontFamily.list">
+        <Domain name="list" id="4899.ChartTitleFontFamily.list">
           <String text="Arial"/>
           <String text="Courier"/>
           <String text="Times"/>
         </Domain>
       </Property>
-      <Property name="ChartTitleFontSize" id="7635.ChartTitleFontSize" number_of_elements="1">
+      <Property name="ChartTitleFontSize" id="4899.ChartTitleFontSize" number_of_elements="1">
         <Element index="0" value="14"/>
       </Property>
-      <Property name="ChartTitleItalic" id="7635.ChartTitleItalic" number_of_elements="1">
+      <Property name="ChartTitleItalic" id="4899.ChartTitleItalic" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.ChartTitleItalic.bool"/>
+        <Domain name="bool" id="4899.ChartTitleItalic.bool"/>
       </Property>
-      <Property name="HideTimeMarker" id="7635.HideTimeMarker" number_of_elements="1">
+      <Property name="HideTimeMarker" id="4899.HideTimeMarker" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.HideTimeMarker.bool"/>
+        <Domain name="bool" id="4899.HideTimeMarker.bool"/>
       </Property>
-      <Property name="LeftAxisColor" id="7635.LeftAxisColor" number_of_elements="3">
+      <Property name="LeftAxisColor" id="4899.LeftAxisColor" number_of_elements="3">
         <Element index="0" value="0"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
-        <Domain name="range" id="7635.LeftAxisColor.range"/>
+        <Domain name="range" id="4899.LeftAxisColor.range"/>
       </Property>
-      <Property name="LeftAxisGridColor" id="7635.LeftAxisGridColor" number_of_elements="3">
+      <Property name="LeftAxisGridColor" id="4899.LeftAxisGridColor" number_of_elements="3">
         <Element index="0" value="0.95"/>
         <Element index="1" value="0.95"/>
         <Element index="2" value="0.95"/>
-        <Domain name="range" id="7635.LeftAxisGridColor.range"/>
+        <Domain name="range" id="4899.LeftAxisGridColor.range"/>
       </Property>
-      <Property name="LeftAxisLabelBold" id="7635.LeftAxisLabelBold" number_of_elements="1">
+      <Property name="LeftAxisLabelBold" id="4899.LeftAxisLabelBold" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.LeftAxisLabelBold.bool"/>
+        <Domain name="bool" id="4899.LeftAxisLabelBold.bool"/>
       </Property>
-      <Property name="LeftAxisLabelColor" id="7635.LeftAxisLabelColor" number_of_elements="3">
+      <Property name="LeftAxisLabelColor" id="4899.LeftAxisLabelColor" number_of_elements="3">
         <Element index="0" value="0"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
-        <Domain name="range" id="7635.LeftAxisLabelColor.range"/>
+        <Domain name="range" id="4899.LeftAxisLabelColor.range"/>
       </Property>
-      <Property name="LeftAxisLabelFontFamily" id="7635.LeftAxisLabelFontFamily" number_of_elements="1">
+      <Property name="LeftAxisLabelFontFamily" id="4899.LeftAxisLabelFontFamily" number_of_elements="1">
         <Element index="0" value="Arial"/>
-        <Domain name="list" id="7635.LeftAxisLabelFontFamily.list">
+        <Domain name="list" id="4899.LeftAxisLabelFontFamily.list">
           <String text="Arial"/>
           <String text="Courier"/>
           <String text="Times"/>
         </Domain>
       </Property>
-      <Property name="LeftAxisLabelFontSize" id="7635.LeftAxisLabelFontSize" number_of_elements="1">
+      <Property name="LeftAxisLabelFontSize" id="4899.LeftAxisLabelFontSize" number_of_elements="1">
         <Element index="0" value="12"/>
       </Property>
-      <Property name="LeftAxisLabelItalic" id="7635.LeftAxisLabelItalic" number_of_elements="1">
+      <Property name="LeftAxisLabelItalic" id="4899.LeftAxisLabelItalic" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.LeftAxisLabelItalic.bool"/>
+        <Domain name="bool" id="4899.LeftAxisLabelItalic.bool"/>
       </Property>
-      <Property name="LeftAxisLabelNotation" id="7635.LeftAxisLabelNotation" number_of_elements="1">
+      <Property name="LeftAxisLabelNotation" id="4899.LeftAxisLabelNotation" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="enum" id="7635.LeftAxisLabelNotation.enum">
+        <Domain name="enum" id="4899.LeftAxisLabelNotation.enum">
           <Entry value="0" text="Mixed"/>
           <Entry value="1" text="Scientific"/>
           <Entry value="2" text="Fixed"/>
         </Domain>
       </Property>
-      <Property name="LeftAxisLabelPrecision" id="7635.LeftAxisLabelPrecision" number_of_elements="1">
+      <Property name="LeftAxisLabelPrecision" id="4899.LeftAxisLabelPrecision" number_of_elements="1">
         <Element index="0" value="2"/>
-        <Domain name="range" id="7635.LeftAxisLabelPrecision.range"/>
+        <Domain name="range" id="4899.LeftAxisLabelPrecision.range"/>
       </Property>
-      <Property name="LeftAxisLabels" id="7635.LeftAxisLabels">
-        <Domain name="scalar_range" id="7635.LeftAxisLabels.scalar_range"/>
+      <Property name="LeftAxisLabels" id="4899.LeftAxisLabels">
+        <Domain name="scalar_range" id="4899.LeftAxisLabels.scalar_range"/>
       </Property>
-      <Property name="LeftAxisLogScale" id="7635.LeftAxisLogScale" number_of_elements="1">
+      <Property name="LeftAxisLogScale" id="4899.LeftAxisLogScale" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.LeftAxisLogScale.bool"/>
+        <Domain name="bool" id="4899.LeftAxisLogScale.bool"/>
       </Property>
-      <Property name="LeftAxisRangeMaximum" id="7635.LeftAxisRangeMaximum" number_of_elements="1">
+      <Property name="LeftAxisRangeMaximum" id="4899.LeftAxisRangeMaximum" number_of_elements="1">
         <Element index="0" value="150"/>
       </Property>
-      <Property name="LeftAxisRangeMinimum" id="7635.LeftAxisRangeMinimum" number_of_elements="1">
+      <Property name="LeftAxisRangeMinimum" id="4899.LeftAxisRangeMinimum" number_of_elements="1">
         <Element index="0" value="-60"/>
       </Property>
-      <Property name="LeftAxisTitle" id="7635.LeftAxisTitle" number_of_elements="1">
+      <Property name="LeftAxisTitle" id="4899.LeftAxisTitle" number_of_elements="1">
         <Element index="0" value=""/>
       </Property>
-      <Property name="LeftAxisTitleBold" id="7635.LeftAxisTitleBold" number_of_elements="1">
+      <Property name="LeftAxisTitleBold" id="4899.LeftAxisTitleBold" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="7635.LeftAxisTitleBold.bool"/>
+        <Domain name="bool" id="4899.LeftAxisTitleBold.bool"/>
       </Property>
-      <Property name="LeftAxisTitleColor" id="7635.LeftAxisTitleColor" number_of_elements="3">
+      <Property name="LeftAxisTitleColor" id="4899.LeftAxisTitleColor" number_of_elements="3">
         <Element index="0" value="0"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
-        <Domain name="range" id="7635.LeftAxisTitleColor.range"/>
+        <Domain name="range" id="4899.LeftAxisTitleColor.range"/>
       </Property>
-      <Property name="LeftAxisTitleFontFamily" id="7635.LeftAxisTitleFontFamily" number_of_elements="1">
+      <Property name="LeftAxisTitleFontFamily" id="4899.LeftAxisTitleFontFamily" number_of_elements="1">
         <Element index="0" value="Arial"/>
-        <Domain name="list" id="7635.LeftAxisTitleFontFamily.list">
+        <Domain name="list" id="4899.LeftAxisTitleFontFamily.list">
           <String text="Arial"/>
           <String text="Courier"/>
           <String text="Times"/>
         </Domain>
       </Property>
-      <Property name="LeftAxisTitleFontSize" id="7635.LeftAxisTitleFontSize" number_of_elements="1">
+      <Property name="LeftAxisTitleFontSize" id="4899.LeftAxisTitleFontSize" number_of_elements="1">
         <Element index="0" value="12"/>
       </Property>
-      <Property name="LeftAxisTitleItalic" id="7635.LeftAxisTitleItalic" number_of_elements="1">
+      <Property name="LeftAxisTitleItalic" id="4899.LeftAxisTitleItalic" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.LeftAxisTitleItalic.bool"/>
+        <Domain name="bool" id="4899.LeftAxisTitleItalic.bool"/>
       </Property>
-      <Property name="LeftAxisUseCustomLabels" id="7635.LeftAxisUseCustomLabels" number_of_elements="1">
+      <Property name="LeftAxisUseCustomLabels" id="4899.LeftAxisUseCustomLabels" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.LeftAxisUseCustomLabels.bool"/>
+        <Domain name="bool" id="4899.LeftAxisUseCustomLabels.bool"/>
       </Property>
-      <Property name="LeftAxisUseCustomRange" id="7635.LeftAxisUseCustomRange" number_of_elements="1">
+      <Property name="LeftAxisUseCustomRange" id="4899.LeftAxisUseCustomRange" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="7635.LeftAxisUseCustomRange.bool"/>
+        <Domain name="bool" id="4899.LeftAxisUseCustomRange.bool"/>
       </Property>
-      <Property name="LegendBold" id="7635.LegendBold" number_of_elements="1">
+      <Property name="LegendBold" id="4899.LegendBold" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.LegendBold.bool"/>
+        <Domain name="bool" id="4899.LegendBold.bool"/>
       </Property>
-      <Property name="LegendFontFamily" id="7635.LegendFontFamily" number_of_elements="1">
+      <Property name="LegendFontFamily" id="4899.LegendFontFamily" number_of_elements="1">
         <Element index="0" value="Arial"/>
-        <Domain name="list" id="7635.LegendFontFamily.list">
+        <Domain name="list" id="4899.LegendFontFamily.list">
           <String text="Arial"/>
           <String text="Courier"/>
           <String text="Times"/>
         </Domain>
       </Property>
-      <Property name="LegendFontSize" id="7635.LegendFontSize" number_of_elements="1">
+      <Property name="LegendFontSize" id="4899.LegendFontSize" number_of_elements="1">
         <Element index="0" value="12"/>
       </Property>
-      <Property name="LegendItalic" id="7635.LegendItalic" number_of_elements="1">
+      <Property name="LegendItalic" id="4899.LegendItalic" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.LegendItalic.bool"/>
+        <Domain name="bool" id="4899.LegendItalic.bool"/>
       </Property>
-      <Property name="LegendLocation" id="7635.LegendLocation" number_of_elements="1">
+      <Property name="LegendLocation" id="4899.LegendLocation" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="enum" id="7635.LegendLocation.enum">
+        <Domain name="enum" id="4899.LegendLocation.enum">
           <Entry value="0" text="TopLeft"/>
           <Entry value="1" text="TopRight"/>
           <Entry value="2" text="BottomRight"/>
@@ -2319,548 +2319,548 @@
           <Entry value="8" text="Custom"/>
         </Domain>
       </Property>
-      <Property name="LegendPosition" id="7635.LegendPosition" number_of_elements="2">
+      <Property name="LegendPosition" id="4899.LegendPosition" number_of_elements="2">
         <Element index="0" value="1428"/>
         <Element index="1" value="316"/>
       </Property>
-      <Property name="PPI" id="7635.PPI" number_of_elements="1">
+      <Property name="PPI" id="4899.PPI" number_of_elements="1">
         <Element index="0" value="96"/>
       </Property>
-      <Property name="Representations" id="7635.Representations" number_of_elements="1">
-        <Proxy value="7669"/>
+      <Property name="Representations" id="4899.Representations" number_of_elements="1">
+        <Proxy value="4888"/>
       </Property>
-      <Property name="RightAxisColor" id="7635.RightAxisColor" number_of_elements="3">
+      <Property name="RightAxisColor" id="4899.RightAxisColor" number_of_elements="3">
         <Element index="0" value="0"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
-        <Domain name="range" id="7635.RightAxisColor.range"/>
+        <Domain name="range" id="4899.RightAxisColor.range"/>
       </Property>
-      <Property name="RightAxisGridColor" id="7635.RightAxisGridColor" number_of_elements="3">
+      <Property name="RightAxisGridColor" id="4899.RightAxisGridColor" number_of_elements="3">
         <Element index="0" value="0.95"/>
         <Element index="1" value="0.95"/>
         <Element index="2" value="0.95"/>
-        <Domain name="range" id="7635.RightAxisGridColor.range"/>
+        <Domain name="range" id="4899.RightAxisGridColor.range"/>
       </Property>
-      <Property name="RightAxisLabelBold" id="7635.RightAxisLabelBold" number_of_elements="1">
+      <Property name="RightAxisLabelBold" id="4899.RightAxisLabelBold" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.RightAxisLabelBold.bool"/>
+        <Domain name="bool" id="4899.RightAxisLabelBold.bool"/>
       </Property>
-      <Property name="RightAxisLabelColor" id="7635.RightAxisLabelColor" number_of_elements="3">
+      <Property name="RightAxisLabelColor" id="4899.RightAxisLabelColor" number_of_elements="3">
         <Element index="0" value="0"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
-        <Domain name="range" id="7635.RightAxisLabelColor.range"/>
+        <Domain name="range" id="4899.RightAxisLabelColor.range"/>
       </Property>
-      <Property name="RightAxisLabelFontFamily" id="7635.RightAxisLabelFontFamily" number_of_elements="1">
+      <Property name="RightAxisLabelFontFamily" id="4899.RightAxisLabelFontFamily" number_of_elements="1">
         <Element index="0" value="Arial"/>
-        <Domain name="list" id="7635.RightAxisLabelFontFamily.list">
+        <Domain name="list" id="4899.RightAxisLabelFontFamily.list">
           <String text="Arial"/>
           <String text="Courier"/>
           <String text="Times"/>
         </Domain>
       </Property>
-      <Property name="RightAxisLabelFontSize" id="7635.RightAxisLabelFontSize" number_of_elements="1">
+      <Property name="RightAxisLabelFontSize" id="4899.RightAxisLabelFontSize" number_of_elements="1">
         <Element index="0" value="12"/>
       </Property>
-      <Property name="RightAxisLabelItalic" id="7635.RightAxisLabelItalic" number_of_elements="1">
+      <Property name="RightAxisLabelItalic" id="4899.RightAxisLabelItalic" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.RightAxisLabelItalic.bool"/>
+        <Domain name="bool" id="4899.RightAxisLabelItalic.bool"/>
       </Property>
-      <Property name="RightAxisLabelNotation" id="7635.RightAxisLabelNotation" number_of_elements="1">
+      <Property name="RightAxisLabelNotation" id="4899.RightAxisLabelNotation" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="enum" id="7635.RightAxisLabelNotation.enum">
+        <Domain name="enum" id="4899.RightAxisLabelNotation.enum">
           <Entry value="0" text="Mixed"/>
           <Entry value="1" text="Scientific"/>
           <Entry value="2" text="Fixed"/>
         </Domain>
       </Property>
-      <Property name="RightAxisLabelPrecision" id="7635.RightAxisLabelPrecision" number_of_elements="1">
+      <Property name="RightAxisLabelPrecision" id="4899.RightAxisLabelPrecision" number_of_elements="1">
         <Element index="0" value="2"/>
-        <Domain name="range" id="7635.RightAxisLabelPrecision.range"/>
+        <Domain name="range" id="4899.RightAxisLabelPrecision.range"/>
       </Property>
-      <Property name="RightAxisLabels" id="7635.RightAxisLabels">
-        <Domain name="scalar_range" id="7635.RightAxisLabels.scalar_range"/>
+      <Property name="RightAxisLabels" id="4899.RightAxisLabels">
+        <Domain name="scalar_range" id="4899.RightAxisLabels.scalar_range"/>
       </Property>
-      <Property name="RightAxisLogScale" id="7635.RightAxisLogScale" number_of_elements="1">
+      <Property name="RightAxisLogScale" id="4899.RightAxisLogScale" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.RightAxisLogScale.bool"/>
+        <Domain name="bool" id="4899.RightAxisLogScale.bool"/>
       </Property>
-      <Property name="RightAxisRangeMaximum" id="7635.RightAxisRangeMaximum" number_of_elements="1">
+      <Property name="RightAxisRangeMaximum" id="4899.RightAxisRangeMaximum" number_of_elements="1">
         <Element index="0" value="7.326"/>
       </Property>
-      <Property name="RightAxisRangeMinimum" id="7635.RightAxisRangeMinimum" number_of_elements="1">
+      <Property name="RightAxisRangeMinimum" id="4899.RightAxisRangeMinimum" number_of_elements="1">
         <Element index="0" value="-0.666"/>
       </Property>
-      <Property name="RightAxisTitle" id="7635.RightAxisTitle" number_of_elements="1">
+      <Property name="RightAxisTitle" id="4899.RightAxisTitle" number_of_elements="1">
         <Element index="0" value=""/>
       </Property>
-      <Property name="RightAxisTitleBold" id="7635.RightAxisTitleBold" number_of_elements="1">
+      <Property name="RightAxisTitleBold" id="4899.RightAxisTitleBold" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="7635.RightAxisTitleBold.bool"/>
+        <Domain name="bool" id="4899.RightAxisTitleBold.bool"/>
       </Property>
-      <Property name="RightAxisTitleColor" id="7635.RightAxisTitleColor" number_of_elements="3">
+      <Property name="RightAxisTitleColor" id="4899.RightAxisTitleColor" number_of_elements="3">
         <Element index="0" value="0"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
-        <Domain name="range" id="7635.RightAxisTitleColor.range"/>
+        <Domain name="range" id="4899.RightAxisTitleColor.range"/>
       </Property>
-      <Property name="RightAxisTitleFontFamily" id="7635.RightAxisTitleFontFamily" number_of_elements="1">
+      <Property name="RightAxisTitleFontFamily" id="4899.RightAxisTitleFontFamily" number_of_elements="1">
         <Element index="0" value="Arial"/>
-        <Domain name="list" id="7635.RightAxisTitleFontFamily.list">
+        <Domain name="list" id="4899.RightAxisTitleFontFamily.list">
           <String text="Arial"/>
           <String text="Courier"/>
           <String text="Times"/>
         </Domain>
       </Property>
-      <Property name="RightAxisTitleFontSize" id="7635.RightAxisTitleFontSize" number_of_elements="1">
+      <Property name="RightAxisTitleFontSize" id="4899.RightAxisTitleFontSize" number_of_elements="1">
         <Element index="0" value="12"/>
       </Property>
-      <Property name="RightAxisTitleItalic" id="7635.RightAxisTitleItalic" number_of_elements="1">
+      <Property name="RightAxisTitleItalic" id="4899.RightAxisTitleItalic" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.RightAxisTitleItalic.bool"/>
+        <Domain name="bool" id="4899.RightAxisTitleItalic.bool"/>
       </Property>
-      <Property name="RightAxisUseCustomLabels" id="7635.RightAxisUseCustomLabels" number_of_elements="1">
+      <Property name="RightAxisUseCustomLabels" id="4899.RightAxisUseCustomLabels" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.RightAxisUseCustomLabels.bool"/>
+        <Domain name="bool" id="4899.RightAxisUseCustomLabels.bool"/>
       </Property>
-      <Property name="RightAxisUseCustomRange" id="7635.RightAxisUseCustomRange" number_of_elements="1">
+      <Property name="RightAxisUseCustomRange" id="4899.RightAxisUseCustomRange" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="7635.RightAxisUseCustomRange.bool"/>
+        <Domain name="bool" id="4899.RightAxisUseCustomRange.bool"/>
       </Property>
-      <Property name="ShowBottomAxisGrid" id="7635.ShowBottomAxisGrid" number_of_elements="1">
+      <Property name="ShowBottomAxisGrid" id="4899.ShowBottomAxisGrid" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="7635.ShowBottomAxisGrid.bool"/>
+        <Domain name="bool" id="4899.ShowBottomAxisGrid.bool"/>
       </Property>
-      <Property name="ShowBottomAxisLabels" id="7635.ShowBottomAxisLabels" number_of_elements="1">
+      <Property name="ShowBottomAxisLabels" id="4899.ShowBottomAxisLabels" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="7635.ShowBottomAxisLabels.bool"/>
+        <Domain name="bool" id="4899.ShowBottomAxisLabels.bool"/>
       </Property>
-      <Property name="ShowLeftAxisGrid" id="7635.ShowLeftAxisGrid" number_of_elements="1">
+      <Property name="ShowLeftAxisGrid" id="4899.ShowLeftAxisGrid" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="7635.ShowLeftAxisGrid.bool"/>
+        <Domain name="bool" id="4899.ShowLeftAxisGrid.bool"/>
       </Property>
-      <Property name="ShowLeftAxisLabels" id="7635.ShowLeftAxisLabels" number_of_elements="1">
+      <Property name="ShowLeftAxisLabels" id="4899.ShowLeftAxisLabels" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="7635.ShowLeftAxisLabels.bool"/>
+        <Domain name="bool" id="4899.ShowLeftAxisLabels.bool"/>
       </Property>
-      <Property name="ShowLegend" id="7635.ShowLegend" number_of_elements="1">
+      <Property name="ShowLegend" id="4899.ShowLegend" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="7635.ShowLegend.bool"/>
+        <Domain name="bool" id="4899.ShowLegend.bool"/>
       </Property>
-      <Property name="ShowRightAxisGrid" id="7635.ShowRightAxisGrid" number_of_elements="1">
+      <Property name="ShowRightAxisGrid" id="4899.ShowRightAxisGrid" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="7635.ShowRightAxisGrid.bool"/>
+        <Domain name="bool" id="4899.ShowRightAxisGrid.bool"/>
       </Property>
-      <Property name="ShowRightAxisLabels" id="7635.ShowRightAxisLabels" number_of_elements="1">
+      <Property name="ShowRightAxisLabels" id="4899.ShowRightAxisLabels" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="7635.ShowRightAxisLabels.bool"/>
+        <Domain name="bool" id="4899.ShowRightAxisLabels.bool"/>
       </Property>
-      <Property name="ShowTopAxisGrid" id="7635.ShowTopAxisGrid" number_of_elements="1">
+      <Property name="ShowTopAxisGrid" id="4899.ShowTopAxisGrid" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="7635.ShowTopAxisGrid.bool"/>
+        <Domain name="bool" id="4899.ShowTopAxisGrid.bool"/>
       </Property>
-      <Property name="ShowTopAxisLabels" id="7635.ShowTopAxisLabels" number_of_elements="1">
+      <Property name="ShowTopAxisLabels" id="4899.ShowTopAxisLabels" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="7635.ShowTopAxisLabels.bool"/>
+        <Domain name="bool" id="4899.ShowTopAxisLabels.bool"/>
       </Property>
-      <Property name="SortByXAxis" id="7635.SortByXAxis" number_of_elements="1">
+      <Property name="SortByXAxis" id="4899.SortByXAxis" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.SortByXAxis.bool"/>
+        <Domain name="bool" id="4899.SortByXAxis.bool"/>
       </Property>
-      <Property name="TooltipNotation" id="7635.TooltipNotation" number_of_elements="1">
+      <Property name="TooltipNotation" id="4899.TooltipNotation" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="enum" id="7635.TooltipNotation.enum">
+        <Domain name="enum" id="4899.TooltipNotation.enum">
           <Entry value="0" text="Mixed"/>
           <Entry value="1" text="Scientific"/>
           <Entry value="2" text="Fixed"/>
         </Domain>
       </Property>
-      <Property name="TooltipPrecision" id="7635.TooltipPrecision" number_of_elements="1">
+      <Property name="TooltipPrecision" id="4899.TooltipPrecision" number_of_elements="1">
         <Element index="0" value="6"/>
-        <Domain name="range" id="7635.TooltipPrecision.range"/>
+        <Domain name="range" id="4899.TooltipPrecision.range"/>
       </Property>
-      <Property name="TopAxisColor" id="7635.TopAxisColor" number_of_elements="3">
+      <Property name="TopAxisColor" id="4899.TopAxisColor" number_of_elements="3">
         <Element index="0" value="0"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
-        <Domain name="range" id="7635.TopAxisColor.range"/>
+        <Domain name="range" id="4899.TopAxisColor.range"/>
       </Property>
-      <Property name="TopAxisGridColor" id="7635.TopAxisGridColor" number_of_elements="3">
+      <Property name="TopAxisGridColor" id="4899.TopAxisGridColor" number_of_elements="3">
         <Element index="0" value="0.95"/>
         <Element index="1" value="0.95"/>
         <Element index="2" value="0.95"/>
-        <Domain name="range" id="7635.TopAxisGridColor.range"/>
+        <Domain name="range" id="4899.TopAxisGridColor.range"/>
       </Property>
-      <Property name="TopAxisLabelBold" id="7635.TopAxisLabelBold" number_of_elements="1">
+      <Property name="TopAxisLabelBold" id="4899.TopAxisLabelBold" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.TopAxisLabelBold.bool"/>
+        <Domain name="bool" id="4899.TopAxisLabelBold.bool"/>
       </Property>
-      <Property name="TopAxisLabelColor" id="7635.TopAxisLabelColor" number_of_elements="3">
+      <Property name="TopAxisLabelColor" id="4899.TopAxisLabelColor" number_of_elements="3">
         <Element index="0" value="0"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
-        <Domain name="range" id="7635.TopAxisLabelColor.range"/>
+        <Domain name="range" id="4899.TopAxisLabelColor.range"/>
       </Property>
-      <Property name="TopAxisLabelFontFamily" id="7635.TopAxisLabelFontFamily" number_of_elements="1">
+      <Property name="TopAxisLabelFontFamily" id="4899.TopAxisLabelFontFamily" number_of_elements="1">
         <Element index="0" value="Arial"/>
-        <Domain name="list" id="7635.TopAxisLabelFontFamily.list">
+        <Domain name="list" id="4899.TopAxisLabelFontFamily.list">
           <String text="Arial"/>
           <String text="Courier"/>
           <String text="Times"/>
         </Domain>
       </Property>
-      <Property name="TopAxisLabelFontSize" id="7635.TopAxisLabelFontSize" number_of_elements="1">
+      <Property name="TopAxisLabelFontSize" id="4899.TopAxisLabelFontSize" number_of_elements="1">
         <Element index="0" value="12"/>
       </Property>
-      <Property name="TopAxisLabelItalic" id="7635.TopAxisLabelItalic" number_of_elements="1">
+      <Property name="TopAxisLabelItalic" id="4899.TopAxisLabelItalic" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.TopAxisLabelItalic.bool"/>
+        <Domain name="bool" id="4899.TopAxisLabelItalic.bool"/>
       </Property>
-      <Property name="TopAxisLabelNotation" id="7635.TopAxisLabelNotation" number_of_elements="1">
+      <Property name="TopAxisLabelNotation" id="4899.TopAxisLabelNotation" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="enum" id="7635.TopAxisLabelNotation.enum">
+        <Domain name="enum" id="4899.TopAxisLabelNotation.enum">
           <Entry value="0" text="Mixed"/>
           <Entry value="1" text="Scientific"/>
           <Entry value="2" text="Fixed"/>
         </Domain>
       </Property>
-      <Property name="TopAxisLabelPrecision" id="7635.TopAxisLabelPrecision" number_of_elements="1">
+      <Property name="TopAxisLabelPrecision" id="4899.TopAxisLabelPrecision" number_of_elements="1">
         <Element index="0" value="2"/>
-        <Domain name="range" id="7635.TopAxisLabelPrecision.range"/>
+        <Domain name="range" id="4899.TopAxisLabelPrecision.range"/>
       </Property>
-      <Property name="TopAxisLabels" id="7635.TopAxisLabels">
-        <Domain name="scalar_range" id="7635.TopAxisLabels.scalar_range"/>
+      <Property name="TopAxisLabels" id="4899.TopAxisLabels">
+        <Domain name="scalar_range" id="4899.TopAxisLabels.scalar_range"/>
       </Property>
-      <Property name="TopAxisLogScale" id="7635.TopAxisLogScale" number_of_elements="1">
+      <Property name="TopAxisLogScale" id="4899.TopAxisLogScale" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.TopAxisLogScale.bool"/>
+        <Domain name="bool" id="4899.TopAxisLogScale.bool"/>
       </Property>
-      <Property name="TopAxisRangeMaximum" id="7635.TopAxisRangeMaximum" number_of_elements="1">
+      <Property name="TopAxisRangeMaximum" id="4899.TopAxisRangeMaximum" number_of_elements="1">
         <Element index="0" value="7.326"/>
       </Property>
-      <Property name="TopAxisRangeMinimum" id="7635.TopAxisRangeMinimum" number_of_elements="1">
+      <Property name="TopAxisRangeMinimum" id="4899.TopAxisRangeMinimum" number_of_elements="1">
         <Element index="0" value="-0.666"/>
       </Property>
-      <Property name="TopAxisTitle" id="7635.TopAxisTitle" number_of_elements="1">
+      <Property name="TopAxisTitle" id="4899.TopAxisTitle" number_of_elements="1">
         <Element index="0" value=""/>
       </Property>
-      <Property name="TopAxisTitleBold" id="7635.TopAxisTitleBold" number_of_elements="1">
+      <Property name="TopAxisTitleBold" id="4899.TopAxisTitleBold" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="7635.TopAxisTitleBold.bool"/>
+        <Domain name="bool" id="4899.TopAxisTitleBold.bool"/>
       </Property>
-      <Property name="TopAxisTitleColor" id="7635.TopAxisTitleColor" number_of_elements="3">
+      <Property name="TopAxisTitleColor" id="4899.TopAxisTitleColor" number_of_elements="3">
         <Element index="0" value="0"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
-        <Domain name="range" id="7635.TopAxisTitleColor.range"/>
+        <Domain name="range" id="4899.TopAxisTitleColor.range"/>
       </Property>
-      <Property name="TopAxisTitleFontFamily" id="7635.TopAxisTitleFontFamily" number_of_elements="1">
+      <Property name="TopAxisTitleFontFamily" id="4899.TopAxisTitleFontFamily" number_of_elements="1">
         <Element index="0" value="Arial"/>
-        <Domain name="list" id="7635.TopAxisTitleFontFamily.list">
+        <Domain name="list" id="4899.TopAxisTitleFontFamily.list">
           <String text="Arial"/>
           <String text="Courier"/>
           <String text="Times"/>
         </Domain>
       </Property>
-      <Property name="TopAxisTitleFontSize" id="7635.TopAxisTitleFontSize" number_of_elements="1">
+      <Property name="TopAxisTitleFontSize" id="4899.TopAxisTitleFontSize" number_of_elements="1">
         <Element index="0" value="12"/>
       </Property>
-      <Property name="TopAxisTitleItalic" id="7635.TopAxisTitleItalic" number_of_elements="1">
+      <Property name="TopAxisTitleItalic" id="4899.TopAxisTitleItalic" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.TopAxisTitleItalic.bool"/>
+        <Domain name="bool" id="4899.TopAxisTitleItalic.bool"/>
       </Property>
-      <Property name="TopAxisUseCustomLabels" id="7635.TopAxisUseCustomLabels" number_of_elements="1">
+      <Property name="TopAxisUseCustomLabels" id="4899.TopAxisUseCustomLabels" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.TopAxisUseCustomLabels.bool"/>
+        <Domain name="bool" id="4899.TopAxisUseCustomLabels.bool"/>
       </Property>
-      <Property name="TopAxisUseCustomRange" id="7635.TopAxisUseCustomRange" number_of_elements="1">
+      <Property name="TopAxisUseCustomRange" id="4899.TopAxisUseCustomRange" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="7635.TopAxisUseCustomRange.bool"/>
+        <Domain name="bool" id="4899.TopAxisUseCustomRange.bool"/>
       </Property>
-      <Property name="UseCache" id="7635.UseCache" number_of_elements="1">
+      <Property name="UseCache" id="4899.UseCache" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.UseCache.bool"/>
+        <Domain name="bool" id="4899.UseCache.bool"/>
       </Property>
-      <Property name="UseOffscreenRendering" id="7635.UseOffscreenRendering" number_of_elements="1">
+      <Property name="UseOffscreenRendering" id="4899.UseOffscreenRendering" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.UseOffscreenRendering.bool"/>
+        <Domain name="bool" id="4899.UseOffscreenRendering.bool"/>
       </Property>
-      <Property name="UseOffscreenRenderingForScreenshots" id="7635.UseOffscreenRenderingForScreenshots" number_of_elements="1">
+      <Property name="UseOffscreenRenderingForScreenshots" id="4899.UseOffscreenRenderingForScreenshots" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="7635.UseOffscreenRenderingForScreenshots.bool"/>
+        <Domain name="bool" id="4899.UseOffscreenRenderingForScreenshots.bool"/>
       </Property>
-      <Property name="ViewSize" id="7635.ViewSize" number_of_elements="2">
+      <Property name="ViewSize" id="4899.ViewSize" number_of_elements="2">
         <Element index="0" value="1505"/>
-        <Element index="1" value="392"/>
+        <Element index="1" value="535"/>
       </Property>
-      <Property name="ViewTime" id="7635.ViewTime" number_of_elements="1">
+      <Property name="ViewTime" id="4899.ViewTime" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="range" id="7635.ViewTime.range"/>
+        <Domain name="range" id="4899.ViewTime.range"/>
       </Property>
     </Proxy>
-    <Proxy group="views" type="XYChartView" id="10649" servers="21">
-      <Property name="BottomAxisColor" id="10649.BottomAxisColor" number_of_elements="3">
+    <Proxy group="views" type="XYChartView" id="4933" servers="21">
+      <Property name="BottomAxisColor" id="4933.BottomAxisColor" number_of_elements="3">
         <Element index="0" value="0"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
-        <Domain name="range" id="10649.BottomAxisColor.range"/>
+        <Domain name="range" id="4933.BottomAxisColor.range"/>
       </Property>
-      <Property name="BottomAxisGridColor" id="10649.BottomAxisGridColor" number_of_elements="3">
+      <Property name="BottomAxisGridColor" id="4933.BottomAxisGridColor" number_of_elements="3">
         <Element index="0" value="0.95"/>
         <Element index="1" value="0.95"/>
         <Element index="2" value="0.95"/>
-        <Domain name="range" id="10649.BottomAxisGridColor.range"/>
+        <Domain name="range" id="4933.BottomAxisGridColor.range"/>
       </Property>
-      <Property name="BottomAxisLabelBold" id="10649.BottomAxisLabelBold" number_of_elements="1">
+      <Property name="BottomAxisLabelBold" id="4933.BottomAxisLabelBold" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.BottomAxisLabelBold.bool"/>
+        <Domain name="bool" id="4933.BottomAxisLabelBold.bool"/>
       </Property>
-      <Property name="BottomAxisLabelColor" id="10649.BottomAxisLabelColor" number_of_elements="3">
+      <Property name="BottomAxisLabelColor" id="4933.BottomAxisLabelColor" number_of_elements="3">
         <Element index="0" value="0"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
-        <Domain name="range" id="10649.BottomAxisLabelColor.range"/>
+        <Domain name="range" id="4933.BottomAxisLabelColor.range"/>
       </Property>
-      <Property name="BottomAxisLabelFontFamily" id="10649.BottomAxisLabelFontFamily" number_of_elements="1">
+      <Property name="BottomAxisLabelFontFamily" id="4933.BottomAxisLabelFontFamily" number_of_elements="1">
         <Element index="0" value="Arial"/>
-        <Domain name="list" id="10649.BottomAxisLabelFontFamily.list">
+        <Domain name="list" id="4933.BottomAxisLabelFontFamily.list">
           <String text="Arial"/>
           <String text="Courier"/>
           <String text="Times"/>
         </Domain>
       </Property>
-      <Property name="BottomAxisLabelFontSize" id="10649.BottomAxisLabelFontSize" number_of_elements="1">
+      <Property name="BottomAxisLabelFontSize" id="4933.BottomAxisLabelFontSize" number_of_elements="1">
         <Element index="0" value="12"/>
       </Property>
-      <Property name="BottomAxisLabelItalic" id="10649.BottomAxisLabelItalic" number_of_elements="1">
+      <Property name="BottomAxisLabelItalic" id="4933.BottomAxisLabelItalic" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.BottomAxisLabelItalic.bool"/>
+        <Domain name="bool" id="4933.BottomAxisLabelItalic.bool"/>
       </Property>
-      <Property name="BottomAxisLabelNotation" id="10649.BottomAxisLabelNotation" number_of_elements="1">
+      <Property name="BottomAxisLabelNotation" id="4933.BottomAxisLabelNotation" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="enum" id="10649.BottomAxisLabelNotation.enum">
+        <Domain name="enum" id="4933.BottomAxisLabelNotation.enum">
           <Entry value="0" text="Mixed"/>
           <Entry value="1" text="Scientific"/>
           <Entry value="2" text="Fixed"/>
         </Domain>
       </Property>
-      <Property name="BottomAxisLabelPrecision" id="10649.BottomAxisLabelPrecision" number_of_elements="1">
+      <Property name="BottomAxisLabelPrecision" id="4933.BottomAxisLabelPrecision" number_of_elements="1">
         <Element index="0" value="2"/>
-        <Domain name="range" id="10649.BottomAxisLabelPrecision.range"/>
+        <Domain name="range" id="4933.BottomAxisLabelPrecision.range"/>
       </Property>
-      <Property name="BottomAxisLabels" id="10649.BottomAxisLabels">
-        <Domain name="scalar_range" id="10649.BottomAxisLabels.scalar_range"/>
+      <Property name="BottomAxisLabels" id="4933.BottomAxisLabels">
+        <Domain name="scalar_range" id="4933.BottomAxisLabels.scalar_range"/>
       </Property>
-      <Property name="BottomAxisLogScale" id="10649.BottomAxisLogScale" number_of_elements="1">
+      <Property name="BottomAxisLogScale" id="4933.BottomAxisLogScale" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.BottomAxisLogScale.bool"/>
+        <Domain name="bool" id="4933.BottomAxisLogScale.bool"/>
       </Property>
-      <Property name="BottomAxisRangeMaximum" id="10649.BottomAxisRangeMaximum" number_of_elements="1">
+      <Property name="BottomAxisRangeMaximum" id="4933.BottomAxisRangeMaximum" number_of_elements="1">
         <Element index="0" value="100"/>
       </Property>
-      <Property name="BottomAxisRangeMinimum" id="10649.BottomAxisRangeMinimum" number_of_elements="1">
+      <Property name="BottomAxisRangeMinimum" id="4933.BottomAxisRangeMinimum" number_of_elements="1">
         <Element index="0" value="0"/>
       </Property>
-      <Property name="BottomAxisTitle" id="10649.BottomAxisTitle" number_of_elements="1">
+      <Property name="BottomAxisTitle" id="4933.BottomAxisTitle" number_of_elements="1">
         <Element index="0" value="Position"/>
       </Property>
-      <Property name="BottomAxisTitleBold" id="10649.BottomAxisTitleBold" number_of_elements="1">
+      <Property name="BottomAxisTitleBold" id="4933.BottomAxisTitleBold" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="10649.BottomAxisTitleBold.bool"/>
+        <Domain name="bool" id="4933.BottomAxisTitleBold.bool"/>
       </Property>
-      <Property name="BottomAxisTitleColor" id="10649.BottomAxisTitleColor" number_of_elements="3">
+      <Property name="BottomAxisTitleColor" id="4933.BottomAxisTitleColor" number_of_elements="3">
         <Element index="0" value="0"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
-        <Domain name="range" id="10649.BottomAxisTitleColor.range"/>
+        <Domain name="range" id="4933.BottomAxisTitleColor.range"/>
       </Property>
-      <Property name="BottomAxisTitleFontFamily" id="10649.BottomAxisTitleFontFamily" number_of_elements="1">
+      <Property name="BottomAxisTitleFontFamily" id="4933.BottomAxisTitleFontFamily" number_of_elements="1">
         <Element index="0" value="Arial"/>
-        <Domain name="list" id="10649.BottomAxisTitleFontFamily.list">
+        <Domain name="list" id="4933.BottomAxisTitleFontFamily.list">
           <String text="Arial"/>
           <String text="Courier"/>
           <String text="Times"/>
         </Domain>
       </Property>
-      <Property name="BottomAxisTitleFontSize" id="10649.BottomAxisTitleFontSize" number_of_elements="1">
+      <Property name="BottomAxisTitleFontSize" id="4933.BottomAxisTitleFontSize" number_of_elements="1">
         <Element index="0" value="12"/>
       </Property>
-      <Property name="BottomAxisTitleItalic" id="10649.BottomAxisTitleItalic" number_of_elements="1">
+      <Property name="BottomAxisTitleItalic" id="4933.BottomAxisTitleItalic" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.BottomAxisTitleItalic.bool"/>
+        <Domain name="bool" id="4933.BottomAxisTitleItalic.bool"/>
       </Property>
-      <Property name="BottomAxisUseCustomLabels" id="10649.BottomAxisUseCustomLabels" number_of_elements="1">
+      <Property name="BottomAxisUseCustomLabels" id="4933.BottomAxisUseCustomLabels" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.BottomAxisUseCustomLabels.bool"/>
+        <Domain name="bool" id="4933.BottomAxisUseCustomLabels.bool"/>
       </Property>
-      <Property name="BottomAxisUseCustomRange" id="10649.BottomAxisUseCustomRange" number_of_elements="1">
+      <Property name="BottomAxisUseCustomRange" id="4933.BottomAxisUseCustomRange" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="10649.BottomAxisUseCustomRange.bool"/>
+        <Domain name="bool" id="4933.BottomAxisUseCustomRange.bool"/>
       </Property>
-      <Property name="CacheKey" id="10649.CacheKey" number_of_elements="1">
+      <Property name="CacheKey" id="4933.CacheKey" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="range" id="10649.CacheKey.range"/>
+        <Domain name="range" id="4933.CacheKey.range"/>
       </Property>
-      <Property name="ChartTitle" id="10649.ChartTitle" number_of_elements="1">
+      <Property name="ChartTitle" id="4933.ChartTitle" number_of_elements="1">
         <Element index="0" value="Froude number"/>
       </Property>
-      <Property name="ChartTitleAlignment" id="10649.ChartTitleAlignment" number_of_elements="1">
+      <Property name="ChartTitleAlignment" id="4933.ChartTitleAlignment" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="enum" id="10649.ChartTitleAlignment.enum">
+        <Domain name="enum" id="4933.ChartTitleAlignment.enum">
           <Entry value="0" text="Left"/>
           <Entry value="1" text="Center"/>
           <Entry value="2" text="Right"/>
         </Domain>
       </Property>
-      <Property name="ChartTitleBold" id="10649.ChartTitleBold" number_of_elements="1">
+      <Property name="ChartTitleBold" id="4933.ChartTitleBold" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.ChartTitleBold.bool"/>
+        <Domain name="bool" id="4933.ChartTitleBold.bool"/>
       </Property>
-      <Property name="ChartTitleColor" id="10649.ChartTitleColor" number_of_elements="3">
+      <Property name="ChartTitleColor" id="4933.ChartTitleColor" number_of_elements="3">
         <Element index="0" value="0"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
-        <Domain name="range" id="10649.ChartTitleColor.range"/>
+        <Domain name="range" id="4933.ChartTitleColor.range"/>
       </Property>
-      <Property name="ChartTitleFontFamily" id="10649.ChartTitleFontFamily" number_of_elements="1">
+      <Property name="ChartTitleFontFamily" id="4933.ChartTitleFontFamily" number_of_elements="1">
         <Element index="0" value="Arial"/>
-        <Domain name="list" id="10649.ChartTitleFontFamily.list">
+        <Domain name="list" id="4933.ChartTitleFontFamily.list">
           <String text="Arial"/>
           <String text="Courier"/>
           <String text="Times"/>
         </Domain>
       </Property>
-      <Property name="ChartTitleFontSize" id="10649.ChartTitleFontSize" number_of_elements="1">
+      <Property name="ChartTitleFontSize" id="4933.ChartTitleFontSize" number_of_elements="1">
         <Element index="0" value="14"/>
       </Property>
-      <Property name="ChartTitleItalic" id="10649.ChartTitleItalic" number_of_elements="1">
+      <Property name="ChartTitleItalic" id="4933.ChartTitleItalic" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.ChartTitleItalic.bool"/>
+        <Domain name="bool" id="4933.ChartTitleItalic.bool"/>
       </Property>
-      <Property name="HideTimeMarker" id="10649.HideTimeMarker" number_of_elements="1">
+      <Property name="HideTimeMarker" id="4933.HideTimeMarker" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.HideTimeMarker.bool"/>
+        <Domain name="bool" id="4933.HideTimeMarker.bool"/>
       </Property>
-      <Property name="LeftAxisColor" id="10649.LeftAxisColor" number_of_elements="3">
+      <Property name="LeftAxisColor" id="4933.LeftAxisColor" number_of_elements="3">
         <Element index="0" value="0"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
-        <Domain name="range" id="10649.LeftAxisColor.range"/>
+        <Domain name="range" id="4933.LeftAxisColor.range"/>
       </Property>
-      <Property name="LeftAxisGridColor" id="10649.LeftAxisGridColor" number_of_elements="3">
+      <Property name="LeftAxisGridColor" id="4933.LeftAxisGridColor" number_of_elements="3">
         <Element index="0" value="0.95"/>
         <Element index="1" value="0.95"/>
         <Element index="2" value="0.95"/>
-        <Domain name="range" id="10649.LeftAxisGridColor.range"/>
+        <Domain name="range" id="4933.LeftAxisGridColor.range"/>
       </Property>
-      <Property name="LeftAxisLabelBold" id="10649.LeftAxisLabelBold" number_of_elements="1">
+      <Property name="LeftAxisLabelBold" id="4933.LeftAxisLabelBold" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.LeftAxisLabelBold.bool"/>
+        <Domain name="bool" id="4933.LeftAxisLabelBold.bool"/>
       </Property>
-      <Property name="LeftAxisLabelColor" id="10649.LeftAxisLabelColor" number_of_elements="3">
+      <Property name="LeftAxisLabelColor" id="4933.LeftAxisLabelColor" number_of_elements="3">
         <Element index="0" value="0"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
-        <Domain name="range" id="10649.LeftAxisLabelColor.range"/>
+        <Domain name="range" id="4933.LeftAxisLabelColor.range"/>
       </Property>
-      <Property name="LeftAxisLabelFontFamily" id="10649.LeftAxisLabelFontFamily" number_of_elements="1">
+      <Property name="LeftAxisLabelFontFamily" id="4933.LeftAxisLabelFontFamily" number_of_elements="1">
         <Element index="0" value="Arial"/>
-        <Domain name="list" id="10649.LeftAxisLabelFontFamily.list">
+        <Domain name="list" id="4933.LeftAxisLabelFontFamily.list">
           <String text="Arial"/>
           <String text="Courier"/>
           <String text="Times"/>
         </Domain>
       </Property>
-      <Property name="LeftAxisLabelFontSize" id="10649.LeftAxisLabelFontSize" number_of_elements="1">
+      <Property name="LeftAxisLabelFontSize" id="4933.LeftAxisLabelFontSize" number_of_elements="1">
         <Element index="0" value="12"/>
       </Property>
-      <Property name="LeftAxisLabelItalic" id="10649.LeftAxisLabelItalic" number_of_elements="1">
+      <Property name="LeftAxisLabelItalic" id="4933.LeftAxisLabelItalic" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.LeftAxisLabelItalic.bool"/>
+        <Domain name="bool" id="4933.LeftAxisLabelItalic.bool"/>
       </Property>
-      <Property name="LeftAxisLabelNotation" id="10649.LeftAxisLabelNotation" number_of_elements="1">
+      <Property name="LeftAxisLabelNotation" id="4933.LeftAxisLabelNotation" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="enum" id="10649.LeftAxisLabelNotation.enum">
+        <Domain name="enum" id="4933.LeftAxisLabelNotation.enum">
           <Entry value="0" text="Mixed"/>
           <Entry value="1" text="Scientific"/>
           <Entry value="2" text="Fixed"/>
         </Domain>
       </Property>
-      <Property name="LeftAxisLabelPrecision" id="10649.LeftAxisLabelPrecision" number_of_elements="1">
+      <Property name="LeftAxisLabelPrecision" id="4933.LeftAxisLabelPrecision" number_of_elements="1">
         <Element index="0" value="2"/>
-        <Domain name="range" id="10649.LeftAxisLabelPrecision.range"/>
+        <Domain name="range" id="4933.LeftAxisLabelPrecision.range"/>
       </Property>
-      <Property name="LeftAxisLabels" id="10649.LeftAxisLabels">
-        <Domain name="scalar_range" id="10649.LeftAxisLabels.scalar_range"/>
+      <Property name="LeftAxisLabels" id="4933.LeftAxisLabels">
+        <Domain name="scalar_range" id="4933.LeftAxisLabels.scalar_range"/>
       </Property>
-      <Property name="LeftAxisLogScale" id="10649.LeftAxisLogScale" number_of_elements="1">
+      <Property name="LeftAxisLogScale" id="4933.LeftAxisLogScale" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.LeftAxisLogScale.bool"/>
+        <Domain name="bool" id="4933.LeftAxisLogScale.bool"/>
       </Property>
-      <Property name="LeftAxisRangeMaximum" id="10649.LeftAxisRangeMaximum" number_of_elements="1">
-        <Element index="0" value="1.5"/>
+      <Property name="LeftAxisRangeMaximum" id="4933.LeftAxisRangeMaximum" number_of_elements="1">
+        <Element index="0" value="1"/>
       </Property>
-      <Property name="LeftAxisRangeMinimum" id="10649.LeftAxisRangeMinimum" number_of_elements="1">
-        <Element index="0" value="-1.5"/>
+      <Property name="LeftAxisRangeMinimum" id="4933.LeftAxisRangeMinimum" number_of_elements="1">
+        <Element index="0" value="0"/>
       </Property>
-      <Property name="LeftAxisTitle" id="10649.LeftAxisTitle" number_of_elements="1">
+      <Property name="LeftAxisTitle" id="4933.LeftAxisTitle" number_of_elements="1">
         <Element index="0" value=""/>
       </Property>
-      <Property name="LeftAxisTitleBold" id="10649.LeftAxisTitleBold" number_of_elements="1">
+      <Property name="LeftAxisTitleBold" id="4933.LeftAxisTitleBold" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="10649.LeftAxisTitleBold.bool"/>
+        <Domain name="bool" id="4933.LeftAxisTitleBold.bool"/>
       </Property>
-      <Property name="LeftAxisTitleColor" id="10649.LeftAxisTitleColor" number_of_elements="3">
+      <Property name="LeftAxisTitleColor" id="4933.LeftAxisTitleColor" number_of_elements="3">
         <Element index="0" value="0"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
-        <Domain name="range" id="10649.LeftAxisTitleColor.range"/>
+        <Domain name="range" id="4933.LeftAxisTitleColor.range"/>
       </Property>
-      <Property name="LeftAxisTitleFontFamily" id="10649.LeftAxisTitleFontFamily" number_of_elements="1">
+      <Property name="LeftAxisTitleFontFamily" id="4933.LeftAxisTitleFontFamily" number_of_elements="1">
         <Element index="0" value="Arial"/>
-        <Domain name="list" id="10649.LeftAxisTitleFontFamily.list">
+        <Domain name="list" id="4933.LeftAxisTitleFontFamily.list">
           <String text="Arial"/>
           <String text="Courier"/>
           <String text="Times"/>
         </Domain>
       </Property>
-      <Property name="LeftAxisTitleFontSize" id="10649.LeftAxisTitleFontSize" number_of_elements="1">
+      <Property name="LeftAxisTitleFontSize" id="4933.LeftAxisTitleFontSize" number_of_elements="1">
         <Element index="0" value="12"/>
       </Property>
-      <Property name="LeftAxisTitleItalic" id="10649.LeftAxisTitleItalic" number_of_elements="1">
+      <Property name="LeftAxisTitleItalic" id="4933.LeftAxisTitleItalic" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.LeftAxisTitleItalic.bool"/>
+        <Domain name="bool" id="4933.LeftAxisTitleItalic.bool"/>
       </Property>
-      <Property name="LeftAxisUseCustomLabels" id="10649.LeftAxisUseCustomLabels" number_of_elements="1">
+      <Property name="LeftAxisUseCustomLabels" id="4933.LeftAxisUseCustomLabels" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.LeftAxisUseCustomLabels.bool"/>
+        <Domain name="bool" id="4933.LeftAxisUseCustomLabels.bool"/>
       </Property>
-      <Property name="LeftAxisUseCustomRange" id="10649.LeftAxisUseCustomRange" number_of_elements="1">
+      <Property name="LeftAxisUseCustomRange" id="4933.LeftAxisUseCustomRange" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="10649.LeftAxisUseCustomRange.bool"/>
+        <Domain name="bool" id="4933.LeftAxisUseCustomRange.bool"/>
       </Property>
-      <Property name="LegendBold" id="10649.LegendBold" number_of_elements="1">
+      <Property name="LegendBold" id="4933.LegendBold" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.LegendBold.bool"/>
+        <Domain name="bool" id="4933.LegendBold.bool"/>
       </Property>
-      <Property name="LegendFontFamily" id="10649.LegendFontFamily" number_of_elements="1">
+      <Property name="LegendFontFamily" id="4933.LegendFontFamily" number_of_elements="1">
         <Element index="0" value="Arial"/>
-        <Domain name="list" id="10649.LegendFontFamily.list">
+        <Domain name="list" id="4933.LegendFontFamily.list">
           <String text="Arial"/>
           <String text="Courier"/>
           <String text="Times"/>
         </Domain>
       </Property>
-      <Property name="LegendFontSize" id="10649.LegendFontSize" number_of_elements="1">
+      <Property name="LegendFontSize" id="4933.LegendFontSize" number_of_elements="1">
         <Element index="0" value="12"/>
       </Property>
-      <Property name="LegendItalic" id="10649.LegendItalic" number_of_elements="1">
+      <Property name="LegendItalic" id="4933.LegendItalic" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.LegendItalic.bool"/>
+        <Domain name="bool" id="4933.LegendItalic.bool"/>
       </Property>
-      <Property name="LegendLocation" id="10649.LegendLocation" number_of_elements="1">
+      <Property name="LegendLocation" id="4933.LegendLocation" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="enum" id="10649.LegendLocation.enum">
+        <Domain name="enum" id="4933.LegendLocation.enum">
           <Entry value="0" text="TopLeft"/>
           <Entry value="1" text="TopRight"/>
           <Entry value="2" text="BottomRight"/>
@@ -2872,283 +2872,283 @@
           <Entry value="8" text="Custom"/>
         </Domain>
       </Property>
-      <Property name="LegendPosition" id="10649.LegendPosition" number_of_elements="2">
+      <Property name="LegendPosition" id="4933.LegendPosition" number_of_elements="2">
         <Element index="0" value="1446"/>
         <Element index="1" value="349"/>
       </Property>
-      <Property name="PPI" id="10649.PPI" number_of_elements="1">
+      <Property name="PPI" id="4933.PPI" number_of_elements="1">
         <Element index="0" value="96"/>
       </Property>
-      <Property name="Representations" id="10649.Representations" number_of_elements="1">
-        <Proxy value="13400"/>
+      <Property name="Representations" id="4933.Representations" number_of_elements="1">
+        <Proxy value="4922"/>
       </Property>
-      <Property name="RightAxisColor" id="10649.RightAxisColor" number_of_elements="3">
+      <Property name="RightAxisColor" id="4933.RightAxisColor" number_of_elements="3">
         <Element index="0" value="0"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
-        <Domain name="range" id="10649.RightAxisColor.range"/>
+        <Domain name="range" id="4933.RightAxisColor.range"/>
       </Property>
-      <Property name="RightAxisGridColor" id="10649.RightAxisGridColor" number_of_elements="3">
+      <Property name="RightAxisGridColor" id="4933.RightAxisGridColor" number_of_elements="3">
         <Element index="0" value="0.95"/>
         <Element index="1" value="0.95"/>
         <Element index="2" value="0.95"/>
-        <Domain name="range" id="10649.RightAxisGridColor.range"/>
+        <Domain name="range" id="4933.RightAxisGridColor.range"/>
       </Property>
-      <Property name="RightAxisLabelBold" id="10649.RightAxisLabelBold" number_of_elements="1">
+      <Property name="RightAxisLabelBold" id="4933.RightAxisLabelBold" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.RightAxisLabelBold.bool"/>
+        <Domain name="bool" id="4933.RightAxisLabelBold.bool"/>
       </Property>
-      <Property name="RightAxisLabelColor" id="10649.RightAxisLabelColor" number_of_elements="3">
+      <Property name="RightAxisLabelColor" id="4933.RightAxisLabelColor" number_of_elements="3">
         <Element index="0" value="0"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
-        <Domain name="range" id="10649.RightAxisLabelColor.range"/>
+        <Domain name="range" id="4933.RightAxisLabelColor.range"/>
       </Property>
-      <Property name="RightAxisLabelFontFamily" id="10649.RightAxisLabelFontFamily" number_of_elements="1">
+      <Property name="RightAxisLabelFontFamily" id="4933.RightAxisLabelFontFamily" number_of_elements="1">
         <Element index="0" value="Arial"/>
-        <Domain name="list" id="10649.RightAxisLabelFontFamily.list">
+        <Domain name="list" id="4933.RightAxisLabelFontFamily.list">
           <String text="Arial"/>
           <String text="Courier"/>
           <String text="Times"/>
         </Domain>
       </Property>
-      <Property name="RightAxisLabelFontSize" id="10649.RightAxisLabelFontSize" number_of_elements="1">
+      <Property name="RightAxisLabelFontSize" id="4933.RightAxisLabelFontSize" number_of_elements="1">
         <Element index="0" value="12"/>
       </Property>
-      <Property name="RightAxisLabelItalic" id="10649.RightAxisLabelItalic" number_of_elements="1">
+      <Property name="RightAxisLabelItalic" id="4933.RightAxisLabelItalic" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.RightAxisLabelItalic.bool"/>
+        <Domain name="bool" id="4933.RightAxisLabelItalic.bool"/>
       </Property>
-      <Property name="RightAxisLabelNotation" id="10649.RightAxisLabelNotation" number_of_elements="1">
+      <Property name="RightAxisLabelNotation" id="4933.RightAxisLabelNotation" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="enum" id="10649.RightAxisLabelNotation.enum">
+        <Domain name="enum" id="4933.RightAxisLabelNotation.enum">
           <Entry value="0" text="Mixed"/>
           <Entry value="1" text="Scientific"/>
           <Entry value="2" text="Fixed"/>
         </Domain>
       </Property>
-      <Property name="RightAxisLabelPrecision" id="10649.RightAxisLabelPrecision" number_of_elements="1">
+      <Property name="RightAxisLabelPrecision" id="4933.RightAxisLabelPrecision" number_of_elements="1">
         <Element index="0" value="2"/>
-        <Domain name="range" id="10649.RightAxisLabelPrecision.range"/>
+        <Domain name="range" id="4933.RightAxisLabelPrecision.range"/>
       </Property>
-      <Property name="RightAxisLabels" id="10649.RightAxisLabels">
-        <Domain name="scalar_range" id="10649.RightAxisLabels.scalar_range"/>
+      <Property name="RightAxisLabels" id="4933.RightAxisLabels">
+        <Domain name="scalar_range" id="4933.RightAxisLabels.scalar_range"/>
       </Property>
-      <Property name="RightAxisLogScale" id="10649.RightAxisLogScale" number_of_elements="1">
+      <Property name="RightAxisLogScale" id="4933.RightAxisLogScale" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.RightAxisLogScale.bool"/>
+        <Domain name="bool" id="4933.RightAxisLogScale.bool"/>
       </Property>
-      <Property name="RightAxisRangeMaximum" id="10649.RightAxisRangeMaximum" number_of_elements="1">
+      <Property name="RightAxisRangeMaximum" id="4933.RightAxisRangeMaximum" number_of_elements="1">
         <Element index="0" value="6.66"/>
       </Property>
-      <Property name="RightAxisRangeMinimum" id="10649.RightAxisRangeMinimum" number_of_elements="1">
+      <Property name="RightAxisRangeMinimum" id="4933.RightAxisRangeMinimum" number_of_elements="1">
         <Element index="0" value="0"/>
       </Property>
-      <Property name="RightAxisTitle" id="10649.RightAxisTitle" number_of_elements="1">
+      <Property name="RightAxisTitle" id="4933.RightAxisTitle" number_of_elements="1">
         <Element index="0" value=""/>
       </Property>
-      <Property name="RightAxisTitleBold" id="10649.RightAxisTitleBold" number_of_elements="1">
+      <Property name="RightAxisTitleBold" id="4933.RightAxisTitleBold" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="10649.RightAxisTitleBold.bool"/>
+        <Domain name="bool" id="4933.RightAxisTitleBold.bool"/>
       </Property>
-      <Property name="RightAxisTitleColor" id="10649.RightAxisTitleColor" number_of_elements="3">
+      <Property name="RightAxisTitleColor" id="4933.RightAxisTitleColor" number_of_elements="3">
         <Element index="0" value="0"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
-        <Domain name="range" id="10649.RightAxisTitleColor.range"/>
+        <Domain name="range" id="4933.RightAxisTitleColor.range"/>
       </Property>
-      <Property name="RightAxisTitleFontFamily" id="10649.RightAxisTitleFontFamily" number_of_elements="1">
+      <Property name="RightAxisTitleFontFamily" id="4933.RightAxisTitleFontFamily" number_of_elements="1">
         <Element index="0" value="Arial"/>
-        <Domain name="list" id="10649.RightAxisTitleFontFamily.list">
+        <Domain name="list" id="4933.RightAxisTitleFontFamily.list">
           <String text="Arial"/>
           <String text="Courier"/>
           <String text="Times"/>
         </Domain>
       </Property>
-      <Property name="RightAxisTitleFontSize" id="10649.RightAxisTitleFontSize" number_of_elements="1">
+      <Property name="RightAxisTitleFontSize" id="4933.RightAxisTitleFontSize" number_of_elements="1">
         <Element index="0" value="12"/>
       </Property>
-      <Property name="RightAxisTitleItalic" id="10649.RightAxisTitleItalic" number_of_elements="1">
+      <Property name="RightAxisTitleItalic" id="4933.RightAxisTitleItalic" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.RightAxisTitleItalic.bool"/>
+        <Domain name="bool" id="4933.RightAxisTitleItalic.bool"/>
       </Property>
-      <Property name="RightAxisUseCustomLabels" id="10649.RightAxisUseCustomLabels" number_of_elements="1">
+      <Property name="RightAxisUseCustomLabels" id="4933.RightAxisUseCustomLabels" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.RightAxisUseCustomLabels.bool"/>
+        <Domain name="bool" id="4933.RightAxisUseCustomLabels.bool"/>
       </Property>
-      <Property name="RightAxisUseCustomRange" id="10649.RightAxisUseCustomRange" number_of_elements="1">
+      <Property name="RightAxisUseCustomRange" id="4933.RightAxisUseCustomRange" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="10649.RightAxisUseCustomRange.bool"/>
+        <Domain name="bool" id="4933.RightAxisUseCustomRange.bool"/>
       </Property>
-      <Property name="ShowBottomAxisGrid" id="10649.ShowBottomAxisGrid" number_of_elements="1">
+      <Property name="ShowBottomAxisGrid" id="4933.ShowBottomAxisGrid" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="10649.ShowBottomAxisGrid.bool"/>
+        <Domain name="bool" id="4933.ShowBottomAxisGrid.bool"/>
       </Property>
-      <Property name="ShowBottomAxisLabels" id="10649.ShowBottomAxisLabels" number_of_elements="1">
+      <Property name="ShowBottomAxisLabels" id="4933.ShowBottomAxisLabels" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="10649.ShowBottomAxisLabels.bool"/>
+        <Domain name="bool" id="4933.ShowBottomAxisLabels.bool"/>
       </Property>
-      <Property name="ShowLeftAxisGrid" id="10649.ShowLeftAxisGrid" number_of_elements="1">
+      <Property name="ShowLeftAxisGrid" id="4933.ShowLeftAxisGrid" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="10649.ShowLeftAxisGrid.bool"/>
+        <Domain name="bool" id="4933.ShowLeftAxisGrid.bool"/>
       </Property>
-      <Property name="ShowLeftAxisLabels" id="10649.ShowLeftAxisLabels" number_of_elements="1">
+      <Property name="ShowLeftAxisLabels" id="4933.ShowLeftAxisLabels" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="10649.ShowLeftAxisLabels.bool"/>
+        <Domain name="bool" id="4933.ShowLeftAxisLabels.bool"/>
       </Property>
-      <Property name="ShowLegend" id="10649.ShowLegend" number_of_elements="1">
+      <Property name="ShowLegend" id="4933.ShowLegend" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="10649.ShowLegend.bool"/>
+        <Domain name="bool" id="4933.ShowLegend.bool"/>
       </Property>
-      <Property name="ShowRightAxisGrid" id="10649.ShowRightAxisGrid" number_of_elements="1">
+      <Property name="ShowRightAxisGrid" id="4933.ShowRightAxisGrid" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="10649.ShowRightAxisGrid.bool"/>
+        <Domain name="bool" id="4933.ShowRightAxisGrid.bool"/>
       </Property>
-      <Property name="ShowRightAxisLabels" id="10649.ShowRightAxisLabels" number_of_elements="1">
+      <Property name="ShowRightAxisLabels" id="4933.ShowRightAxisLabels" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="10649.ShowRightAxisLabels.bool"/>
+        <Domain name="bool" id="4933.ShowRightAxisLabels.bool"/>
       </Property>
-      <Property name="ShowTopAxisGrid" id="10649.ShowTopAxisGrid" number_of_elements="1">
+      <Property name="ShowTopAxisGrid" id="4933.ShowTopAxisGrid" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="10649.ShowTopAxisGrid.bool"/>
+        <Domain name="bool" id="4933.ShowTopAxisGrid.bool"/>
       </Property>
-      <Property name="ShowTopAxisLabels" id="10649.ShowTopAxisLabels" number_of_elements="1">
+      <Property name="ShowTopAxisLabels" id="4933.ShowTopAxisLabels" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="10649.ShowTopAxisLabels.bool"/>
+        <Domain name="bool" id="4933.ShowTopAxisLabels.bool"/>
       </Property>
-      <Property name="SortByXAxis" id="10649.SortByXAxis" number_of_elements="1">
+      <Property name="SortByXAxis" id="4933.SortByXAxis" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.SortByXAxis.bool"/>
+        <Domain name="bool" id="4933.SortByXAxis.bool"/>
       </Property>
-      <Property name="TooltipNotation" id="10649.TooltipNotation" number_of_elements="1">
+      <Property name="TooltipNotation" id="4933.TooltipNotation" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="enum" id="10649.TooltipNotation.enum">
+        <Domain name="enum" id="4933.TooltipNotation.enum">
           <Entry value="0" text="Mixed"/>
           <Entry value="1" text="Scientific"/>
           <Entry value="2" text="Fixed"/>
         </Domain>
       </Property>
-      <Property name="TooltipPrecision" id="10649.TooltipPrecision" number_of_elements="1">
+      <Property name="TooltipPrecision" id="4933.TooltipPrecision" number_of_elements="1">
         <Element index="0" value="6"/>
-        <Domain name="range" id="10649.TooltipPrecision.range"/>
+        <Domain name="range" id="4933.TooltipPrecision.range"/>
       </Property>
-      <Property name="TopAxisColor" id="10649.TopAxisColor" number_of_elements="3">
+      <Property name="TopAxisColor" id="4933.TopAxisColor" number_of_elements="3">
         <Element index="0" value="0"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
-        <Domain name="range" id="10649.TopAxisColor.range"/>
+        <Domain name="range" id="4933.TopAxisColor.range"/>
       </Property>
-      <Property name="TopAxisGridColor" id="10649.TopAxisGridColor" number_of_elements="3">
+      <Property name="TopAxisGridColor" id="4933.TopAxisGridColor" number_of_elements="3">
         <Element index="0" value="0.95"/>
         <Element index="1" value="0.95"/>
         <Element index="2" value="0.95"/>
-        <Domain name="range" id="10649.TopAxisGridColor.range"/>
+        <Domain name="range" id="4933.TopAxisGridColor.range"/>
       </Property>
-      <Property name="TopAxisLabelBold" id="10649.TopAxisLabelBold" number_of_elements="1">
+      <Property name="TopAxisLabelBold" id="4933.TopAxisLabelBold" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.TopAxisLabelBold.bool"/>
+        <Domain name="bool" id="4933.TopAxisLabelBold.bool"/>
       </Property>
-      <Property name="TopAxisLabelColor" id="10649.TopAxisLabelColor" number_of_elements="3">
+      <Property name="TopAxisLabelColor" id="4933.TopAxisLabelColor" number_of_elements="3">
         <Element index="0" value="0"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
-        <Domain name="range" id="10649.TopAxisLabelColor.range"/>
+        <Domain name="range" id="4933.TopAxisLabelColor.range"/>
       </Property>
-      <Property name="TopAxisLabelFontFamily" id="10649.TopAxisLabelFontFamily" number_of_elements="1">
+      <Property name="TopAxisLabelFontFamily" id="4933.TopAxisLabelFontFamily" number_of_elements="1">
         <Element index="0" value="Arial"/>
-        <Domain name="list" id="10649.TopAxisLabelFontFamily.list">
+        <Domain name="list" id="4933.TopAxisLabelFontFamily.list">
           <String text="Arial"/>
           <String text="Courier"/>
           <String text="Times"/>
         </Domain>
       </Property>
-      <Property name="TopAxisLabelFontSize" id="10649.TopAxisLabelFontSize" number_of_elements="1">
+      <Property name="TopAxisLabelFontSize" id="4933.TopAxisLabelFontSize" number_of_elements="1">
         <Element index="0" value="12"/>
       </Property>
-      <Property name="TopAxisLabelItalic" id="10649.TopAxisLabelItalic" number_of_elements="1">
+      <Property name="TopAxisLabelItalic" id="4933.TopAxisLabelItalic" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.TopAxisLabelItalic.bool"/>
+        <Domain name="bool" id="4933.TopAxisLabelItalic.bool"/>
       </Property>
-      <Property name="TopAxisLabelNotation" id="10649.TopAxisLabelNotation" number_of_elements="1">
+      <Property name="TopAxisLabelNotation" id="4933.TopAxisLabelNotation" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="enum" id="10649.TopAxisLabelNotation.enum">
+        <Domain name="enum" id="4933.TopAxisLabelNotation.enum">
           <Entry value="0" text="Mixed"/>
           <Entry value="1" text="Scientific"/>
           <Entry value="2" text="Fixed"/>
         </Domain>
       </Property>
-      <Property name="TopAxisLabelPrecision" id="10649.TopAxisLabelPrecision" number_of_elements="1">
+      <Property name="TopAxisLabelPrecision" id="4933.TopAxisLabelPrecision" number_of_elements="1">
         <Element index="0" value="2"/>
-        <Domain name="range" id="10649.TopAxisLabelPrecision.range"/>
+        <Domain name="range" id="4933.TopAxisLabelPrecision.range"/>
       </Property>
-      <Property name="TopAxisLabels" id="10649.TopAxisLabels">
-        <Domain name="scalar_range" id="10649.TopAxisLabels.scalar_range"/>
+      <Property name="TopAxisLabels" id="4933.TopAxisLabels">
+        <Domain name="scalar_range" id="4933.TopAxisLabels.scalar_range"/>
       </Property>
-      <Property name="TopAxisLogScale" id="10649.TopAxisLogScale" number_of_elements="1">
+      <Property name="TopAxisLogScale" id="4933.TopAxisLogScale" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.TopAxisLogScale.bool"/>
+        <Domain name="bool" id="4933.TopAxisLogScale.bool"/>
       </Property>
-      <Property name="TopAxisRangeMaximum" id="10649.TopAxisRangeMaximum" number_of_elements="1">
+      <Property name="TopAxisRangeMaximum" id="4933.TopAxisRangeMaximum" number_of_elements="1">
         <Element index="0" value="6.66"/>
       </Property>
-      <Property name="TopAxisRangeMinimum" id="10649.TopAxisRangeMinimum" number_of_elements="1">
+      <Property name="TopAxisRangeMinimum" id="4933.TopAxisRangeMinimum" number_of_elements="1">
         <Element index="0" value="0"/>
       </Property>
-      <Property name="TopAxisTitle" id="10649.TopAxisTitle" number_of_elements="1">
+      <Property name="TopAxisTitle" id="4933.TopAxisTitle" number_of_elements="1">
         <Element index="0" value=""/>
       </Property>
-      <Property name="TopAxisTitleBold" id="10649.TopAxisTitleBold" number_of_elements="1">
+      <Property name="TopAxisTitleBold" id="4933.TopAxisTitleBold" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="10649.TopAxisTitleBold.bool"/>
+        <Domain name="bool" id="4933.TopAxisTitleBold.bool"/>
       </Property>
-      <Property name="TopAxisTitleColor" id="10649.TopAxisTitleColor" number_of_elements="3">
+      <Property name="TopAxisTitleColor" id="4933.TopAxisTitleColor" number_of_elements="3">
         <Element index="0" value="0"/>
         <Element index="1" value="0"/>
         <Element index="2" value="0"/>
-        <Domain name="range" id="10649.TopAxisTitleColor.range"/>
+        <Domain name="range" id="4933.TopAxisTitleColor.range"/>
       </Property>
-      <Property name="TopAxisTitleFontFamily" id="10649.TopAxisTitleFontFamily" number_of_elements="1">
+      <Property name="TopAxisTitleFontFamily" id="4933.TopAxisTitleFontFamily" number_of_elements="1">
         <Element index="0" value="Arial"/>
-        <Domain name="list" id="10649.TopAxisTitleFontFamily.list">
+        <Domain name="list" id="4933.TopAxisTitleFontFamily.list">
           <String text="Arial"/>
           <String text="Courier"/>
           <String text="Times"/>
         </Domain>
       </Property>
-      <Property name="TopAxisTitleFontSize" id="10649.TopAxisTitleFontSize" number_of_elements="1">
+      <Property name="TopAxisTitleFontSize" id="4933.TopAxisTitleFontSize" number_of_elements="1">
         <Element index="0" value="12"/>
       </Property>
-      <Property name="TopAxisTitleItalic" id="10649.TopAxisTitleItalic" number_of_elements="1">
+      <Property name="TopAxisTitleItalic" id="4933.TopAxisTitleItalic" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.TopAxisTitleItalic.bool"/>
+        <Domain name="bool" id="4933.TopAxisTitleItalic.bool"/>
       </Property>
-      <Property name="TopAxisUseCustomLabels" id="10649.TopAxisUseCustomLabels" number_of_elements="1">
+      <Property name="TopAxisUseCustomLabels" id="4933.TopAxisUseCustomLabels" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.TopAxisUseCustomLabels.bool"/>
+        <Domain name="bool" id="4933.TopAxisUseCustomLabels.bool"/>
       </Property>
-      <Property name="TopAxisUseCustomRange" id="10649.TopAxisUseCustomRange" number_of_elements="1">
+      <Property name="TopAxisUseCustomRange" id="4933.TopAxisUseCustomRange" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="10649.TopAxisUseCustomRange.bool"/>
+        <Domain name="bool" id="4933.TopAxisUseCustomRange.bool"/>
       </Property>
-      <Property name="UseCache" id="10649.UseCache" number_of_elements="1">
+      <Property name="UseCache" id="4933.UseCache" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.UseCache.bool"/>
+        <Domain name="bool" id="4933.UseCache.bool"/>
       </Property>
-      <Property name="UseOffscreenRendering" id="10649.UseOffscreenRendering" number_of_elements="1">
+      <Property name="UseOffscreenRendering" id="4933.UseOffscreenRendering" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.UseOffscreenRendering.bool"/>
+        <Domain name="bool" id="4933.UseOffscreenRendering.bool"/>
       </Property>
-      <Property name="UseOffscreenRenderingForScreenshots" id="10649.UseOffscreenRenderingForScreenshots" number_of_elements="1">
+      <Property name="UseOffscreenRenderingForScreenshots" id="4933.UseOffscreenRenderingForScreenshots" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="10649.UseOffscreenRenderingForScreenshots.bool"/>
+        <Domain name="bool" id="4933.UseOffscreenRenderingForScreenshots.bool"/>
       </Property>
-      <Property name="ViewSize" id="10649.ViewSize" number_of_elements="2">
+      <Property name="ViewSize" id="4933.ViewSize" number_of_elements="2">
         <Element index="0" value="1505"/>
-        <Element index="1" value="391"/>
+        <Element index="1" value="248"/>
       </Property>
-      <Property name="ViewTime" id="10649.ViewTime" number_of_elements="1">
+      <Property name="ViewTime" id="4933.ViewTime" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="range" id="10649.ViewTime.range"/>
+        <Domain name="range" id="4933.ViewTime.range"/>
       </Property>
     </Proxy>
     <ProxyCollection name="animation">
@@ -3156,33 +3156,33 @@
       <Item id="265" name="TimeAnimationCue1"/>
     </ProxyCollection>
     <ProxyCollection name="layouts">
-      <Item id="7633" name="Layout #1"/>
+      <Item id="4934" name="Layout #1"/>
     </ProxyCollection>
-    <ProxyCollection name="pq_helper_proxies.13377">
-      <Item id="13388" name="RepresentationAnimationHelper"/>
+    <ProxyCollection name="pq_helper_proxies.4866">
+      <Item id="4936" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
-    <ProxyCollection name="pq_helper_proxies.7554">
-      <Item id="7566" name="RepresentationAnimationHelper"/>
+    <ProxyCollection name="pq_helper_proxies.4900">
+      <Item id="4935" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="representations">
-      <Item id="7669" name="XYChartRepresentation1"/>
-      <Item id="13400" name="XYChartRepresentation2"/>
+      <Item id="4888" name="XYChartRepresentation1"/>
+      <Item id="4922" name="XYChartRepresentation2"/>
     </ProxyCollection>
     <ProxyCollection name="sources">
-      <Item id="7554" name="swe1d.vtp"/>
-      <Item id="13377" name="swe1d.vtp"/>
+      <Item id="4866" name="swe1d.vtp"/>
+      <Item id="4900" name="swe1d.vtp"/>
     </ProxyCollection>
     <ProxyCollection name="timekeeper">
       <Item id="259" name="TimeKeeper1"/>
     </ProxyCollection>
     <ProxyCollection name="views">
-      <Item id="7635" name="LineChartView1"/>
-      <Item id="10649" name="LineChartView2"/>
+      <Item id="4899" name="LineChartView1"/>
+      <Item id="4933" name="LineChartView2"/>
     </ProxyCollection>
     <CustomProxyDefinitions/>
     <Links>
-      <GlobalPropertyLink global_name="SelectionColor" proxy="7669" property="Color"/>
-      <GlobalPropertyLink global_name="SelectionColor" proxy="13400" property="Color"/>
+      <GlobalPropertyLink global_name="SelectionColor" proxy="4888" property="Color"/>
+      <GlobalPropertyLink global_name="SelectionColor" proxy="4922" property="Color"/>
     </Links>
   </ServerManagerState>
   <InteractiveViewLinks/>

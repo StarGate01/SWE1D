@@ -1,10 +1,10 @@
 /**
- * @file shockshock.hpp
- * @brief Shock-Shock scenario
-*/
+ * @file hydraulicsup.hpp
+ * @brief Hydraulic supercritical scenario
+ */
 
-#ifndef SCENARIOS_SHOCKSHOCK_H_
-#define SCENARIOS_SHOCKSHOCK_H_
+#ifndef SCENARIOS_HYDRAULICSUP_H_
+#define SCENARIOS_HYDRAULICSUP_H_
 
 #include "../types.hpp"
 
@@ -12,9 +12,9 @@ namespace scenarios
 {
 
 	/**
-	 * @brief Implementation of the Shock-Shock scenario
+	 * @brief Implementation of the hydraulic supercritical scenario
 	 */
-	class ShockShock
+	class HydraulicSup
 	{
 
 	private:
@@ -37,7 +37,7 @@ namespace scenarios
 		 * 
 		 * @param size The size of the domain
 		 */
-		ShockShock(unsigned int size)
+		HydraulicSup(unsigned int size)
 			: m_size(size)
 		{
 		}
@@ -49,9 +49,9 @@ namespace scenarios
 		 * 
 		 * @return The initial water height above the bathymetry
 		 */
-		unsigned int getHeight(unsigned int pos)
+		T getHeight(unsigned int pos)
 		{
-			return m_height;
+			return (pos >= 0 && pos <=25) ? -(getBathy(pos)) : 0;
 		}
 
 		/**
@@ -61,10 +61,9 @@ namespace scenarios
 		 * 
 		 * @return The initial water speed
 		 */
-		signed int getSpeed(unsigned int pos)
+		T getSpeed(unsigned int pos)
 		{
-			if (pos <= m_xdis) return m_leftSpeed;
-			return m_rightSpeed; // switch left and right for rare-rare
+			return (pos >= 0 && pos <=25) ? 0.18 : 0;
 		}
 
 		/**
@@ -72,11 +71,12 @@ namespace scenarios
 		 * 
 		 * @param pos The cell position
 		 * 
-		 * @return The Initial bathymetry
+		 * @return The initial bathymetry
 		 */
-		float getBathy(unsigned int pos)
+		T getBathy(unsigned int pos)
 		{
-			return 0;
+			if(pos > 8 && pos < 12) return -0.13 - (0.05 * ((pos-10) * (pos-10)));
+			return -0.33;
 		}
 
 		/**
@@ -95,4 +95,4 @@ namespace scenarios
 
 }
 
-#endif /* SCENARIOS_SHOCKSHOCK_H_ */
+#endif /* SCENARIOS_HYDRAULICSUP_H_ */

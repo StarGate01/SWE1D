@@ -1,6 +1,6 @@
 /**
- * @file rarerare.h
- * @brief Contains rare-rare riemann problems
+ * @file rarerare.hpp
+ * @brief Rare-Rare scenario
 */
 
 #ifndef SCENARIOS_RARERARE_H_
@@ -11,31 +11,43 @@
 namespace scenarios
 {
 
+	/**
+	 * @brief Implementation of the Rare-Rare scenario
+	 */
 	class RareRare
 	{
 
 	private:
 
-		/** Number of cells */
+		/** @brief Number of cells */
 		const unsigned int m_size;
-		/** Point of collision (here: in the middle) */
+		/** @brief Point of collision (here: in the middle) */
 		const unsigned int m_xdis = m_size/2;
-		/** initial water height at all cells */
+		/** @brief Initial water height at all cells */
 		const signed int m_height = 10;
-		/** initial water speed left of xdis */
+		/** @brief Initial water speed left of xdis */
 		const signed int m_leftSpeed = -10;
-		/** initial water speed right of xdis */
+		/** @brief Initial water speed right of xdis */
 		const signed int m_rightSpeed = 10;
 
 	public:
 
+		/** 
+		 * @brief Constructor
+		 * 
+		 * @param size The size of the domain
+		 */
 		RareRare(unsigned int size)
 			: m_size(size)
 		{
 		}
 
 		/**
-		 * @return Initial water height at pos
+		 * @brief Generates the water height
+		 * 
+		 * @param pos The cell position
+		 * 
+		 * @return The initial water height above the bathymetry
 		 */
 		unsigned int getHeight(unsigned int pos)
 		{
@@ -43,18 +55,36 @@ namespace scenarios
 		}
 
 		/**
-		 * @return Initial water speed at pos
+		 * @brief Generates the water speed
+		 * 
+		 * @param pos The cell position
+		 * 
+		 * @return The initial water speed
 		 */
 		signed int getSpeed(unsigned int pos)
 		{
-			if (pos <= m_xdis)
-				return m_leftSpeed;
-
+			if (pos <= m_xdis) return m_leftSpeed;
 			return m_rightSpeed; // switch left and right 10 for shock-shock
 		}
 
 		/**
-		 * @return Cell size of one cell (= domain size/number of cells)
+		 * @brief Generates the bathymetry
+		 * 
+		 * @param pos The cell position
+		 * 
+		 * @return The initial bathymetry
+		 */
+		float getBathy(unsigned int pos)
+		{
+			return 0;
+		}
+
+		/**
+		 * @brief Computes the cell size
+		 * 
+		 * Calculates domain size / number of cells
+		 * 
+		 * @return Cell size of one cell
 		 */
 		T getCellSize()
 		{
@@ -65,4 +95,4 @@ namespace scenarios
 
 }
 
-#endif /* SCENARIOS_RaraRare_H_ */
+#endif /* SCENARIOS_RARERARE_H_ */

@@ -1,124 +1,113 @@
 /**
- * @file
- *  This file is part of SWE1D
- *
- *  SWE1D is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  SWE1D is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with SWE1D.  If not, see <http://www.gnu.org/licenses/>.
- *
- *  Diese Datei ist Teil von SWE1D.
- *
- *  SWE1D ist Freie Software: Sie koennen es unter den Bedingungen
- *  der GNU General Public License, wie von der Free Software Foundation,
- *  Version 3 der Lizenz oder (nach Ihrer Option) jeder spaeteren
- *  veroeffentlichten Version, weiterverbreiten und/oder modifizieren.
- *
- *  SWE1D wird in der Hoffnung, dass es nuetzlich sein wird, aber
- *  OHNE JEDE GEWAEHELEISTUNG, bereitgestellt; sogar ohne die implizite
- *  Gewaehrleistung der MARKTFAEHIGKEIT oder EIGNUNG FUER EINEN BESTIMMTEN
- *  ZWECK. Siehe die GNU General Public License fuer weitere Details.
- *
- *  Sie sollten eine Kopie der GNU General Public License zusammen mit diesem
- *  Programm erhalten haben. Wenn nicht, siehe <http://www.gnu.org/licenses/>.
- * 
- * @copyright 2013 Technische Universitaet Muenchen
- * @author Sebastian Rettenberger <rettenbs@in.tum.de>
+ * @file dambreak.hpp
+ * @brief Dam break scenario
  */
 
 #ifndef SCENARIOS_DAMBREAK_H_
 #define SCENARIOS_DAMBREAK_H_
 
-#include <vector>
+// #include <vector>
 #include "../types.hpp"
 
+/**
+ * @brief Scenarios for the 1D solver
+ */ 
 namespace scenarios
 {
 
+	/**
+	 * @brief Implementation of the Dam break scenario
+	 */
 	class DamBreak
 	{
 
 	private:
 		
-		/** Number of cells */
+		/** @brief Number of cells */
 		const unsigned int m_size;
-		/** Point of collision (here: in the middle) */
+		/** @brief Point of collision (here: in the middle) */
 		const unsigned int m_xdis = m_size/2;
-		/** initial water height left of xdis*/
+		/** @brief initial water height left of xdis*/
 		const float m_leftHeight = 20;
-		/** initial water height righr of xdis*/
+		/** @brief initial water height righr of xdis*/
 		const float m_rightHeight = 5;
-		/** initial water speed left of xdis */
+		/** @brief initial water speed left of xdis */
 		const float m_leftSpeed = 0;
-		/** initial water speed right of xdis */
+		/** @brief initial water speed right of xdis */
 		const float m_rightSpeed = 0;
 
-		/** Point of bathymetry change on the left*/
+		/** @brief Point of bathymetry change on the left*/
 		const unsigned int m_lbdis = 10;
-		/** Point of bathymetry change on the left*/
+		/** @brief Point of bathymetry change on the left*/
 		const unsigned int m_rbdis = 20;
-		/** initial bathymetry left of lbdis */
+		/** @brief Initial bathymetry left of lbdis */
 		const float m_leftB = -5;
-		/** initial bathymetry between lbdis and rbdis */
+		/** @brief Initial bathymetry between lbdis and rbdis */
 		const float m_middleB = -30;
-		/** initial bathymetryright right of rbdis */
+		/** @brief Initial bathymetryright right of rbdis */
 		const float m_rightB = -10;
 
-		/** Additional options */
+		/** @brief Additional options */
 		//std::vector<int> m_options;
 
 	public:
 
+		/** 
+		 * @brief Constructor
+		 * 
+		 * @param size The size of the domain
+		 */
 		DamBreak(unsigned int size) //, std::vector<int> options)
 			: m_size(size) //, m_options(options)
 		{
 		}
 
 		/**
-		 * @return Initial water height at pos
+		 * @brief Generates the water height
+		 * 
+		 * @param pos The cell position
+		 * 
+		 * @return The initial water height above the bathymetry
 		 */
 		float getHeight(unsigned int pos)
 		{
-			if (pos <= m_size/2)
-				return m_leftHeight;
-
+			if (pos <= m_size/2) return m_leftHeight;
 			return m_rightHeight;
 		}
 
 		/**
-		 * @return Initial water speed at pos
+		 * @brief Generates the water speed
+		 * 
+		 * @param pos The cell position
+		 * 
+		 * @return The initial water speed
 		 */
 		float getSpeed(unsigned int pos)
 		{
-			if (pos <= m_xdis)
-				return m_leftSpeed;
-
+			if (pos <= m_xdis) return m_leftSpeed;
 			return m_rightSpeed; 
 		}
 
 		/**
-		 * @return Initial bathymetry at pos
+		 * @brief Generates the bathymetry
+		 * 
+		 * @param pos The cell position
+		 * 
+		 * @return The initial bathymetry
 		 */
 		float getBathy(unsigned int pos)
 		{
-			if (pos <= m_lbdis)
-				return m_leftB;
-			else if (pos <= m_rbdis)
-				return m_middleB;
-
+			if (pos <= m_lbdis) return m_leftB;
+			else if (pos <= m_rbdis) return m_middleB;
 			return m_rightB; 
 		}
 
 		/**
-		 * @return Cell size of one cell (= domain size/number of cells)
+		 * @brief Computes the cell size
+		 * 
+		 * Calculates domain size / number of cells
+		 * 
+		 * @return Cell size of one cell
 		 */
 		T getCellSize()
 		{

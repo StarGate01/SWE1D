@@ -75,21 +75,19 @@ namespace writer
 			// initialize vtp stream
 			std::ostringstream l_vtpFileName;
 			l_vtpFileName << m_basename << ".vtp";
-
 			m_vtpFile = new std::ofstream( l_vtpFileName.str().c_str() );
 
 			// write vtp header
-					*m_vtpFile
+			*m_vtpFile
 				<< "<?xml version=\"1.0\"?>" << std::endl
 				<< "<VTKFile type=\"Collection\" version=\"0.1\">" << std::endl
 				<< "<Collection>" << std::endl;
-
 		}
 
 		// destructor (free memory)
 		~VtkWriter() {
 			// close vtp file
-					*m_vtpFile
+			*m_vtpFile
 				<< "</Collection>" << std::endl
 				<< "</VTKFile>" << std::endl;
 			delete m_vtpFile;	
@@ -98,19 +96,24 @@ namespace writer
 		/**
 		 * Writes all values to vtk file
 		 *
+		 * @param time Current time
+		 * @param h Current height
+		 * @param hu Current flux
+		 * @param b Current bathymetry
+		 * @param f Current frode number
 		 * @param size Number of cells (without boundary values)
 		 */
-		void write(const T time, const T *h, const T *hu, const T *b, unsigned int size)
+		void write(const T time, const T *h, const T *hu, const T *b, const T *f, unsigned int size)
 		{
 			// generate vtk file name
 			std::string l_fileName = generateFileName();
 
 			// add current time to vtp collection
 			*m_vtpFile << "<DataSet timestep=\""
-							<< time
-							<< "0\" group=\"\" part=\"0\" file=\""
-							<< l_fileName
-							<< "\"/> " << std::endl;
+						<< time
+						<< "0\" group=\"\" part=\"0\" file=\""
+						<< l_fileName
+						<< "\"/> " << std::endl;
 
 			// write vtk file
 			std::ofstream vtkFile(l_fileName.c_str());
@@ -147,26 +150,27 @@ namespace writer
 
 			// water surface height
 			vtkFile << "<DataArray Name=\"h\" type=\"Float32\" format=\"ascii\">" << std::endl;
-			for (int i=1; i < size+1; i++)
-					vtkFile << h[i] << std::endl;
+			for (int i=1; i < size+1; i++) vtkFile << h[i] << std::endl;
 			vtkFile << "</DataArray>" << std::endl;
 
 			// momentum
 			vtkFile << "<DataArray Name=\"hu\" type=\"Float32\" format=\"ascii\">" << std::endl;
-			for (int i=1; i < size+1; i++)
-				vtkFile << hu[i] << std::endl;
+			for (int i=1; i < size+1; i++) vtkFile << hu[i] << std::endl;
 			vtkFile << "</DataArray>" << std::endl;
 
 			// bathymetry
 			vtkFile << "<DataArray Name=\"b\" type=\"Float32\" format=\"ascii\">" << std::endl;
-			for (int i=1; i<size+1; i++)
-					vtkFile << b[i] << std::endl;
+			for (int i=1; i<size+1; i++) vtkFile << b[i] << std::endl;
 			vtkFile << "</DataArray>" << std::endl;
 
 			// bathymetry + water height
 			vtkFile << "<DataArray Name=\"b+h\" type=\"Float32\" format=\"ascii\">" << std::endl;
-			for (int i=1; i<size+1; i++)
-					vtkFile << b[i] + h[i] << std::endl;
+			for (int i=1; i<size+1; i++) vtkFile << b[i] + h[i] << std::endl;
+			vtkFile << "</DataArray>" << std::endl;
+
+			// frode number
+			vtkFile << "<DataArray Name=\"f*10\" type=\"Float32\" format=\"ascii\">" << std::endl;
+			for (int i=1; i<size+1; i++) vtkFile << f[i] * 10 << std::endl;
 			vtkFile << "</DataArray>" << std::endl;
 
 			vtkFile << "</CellData>" << std::endl

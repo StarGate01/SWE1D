@@ -79,10 +79,10 @@ class WavePropagation
 		T *m_h;
 		T *m_hu;
 		T *m_b;
+		T *m_f;
 
 		T *m_hNetUpdatesLeft;
 		T *m_hNetUpdatesRight;
-
 		T *m_huNetUpdatesLeft;
 		T *m_huNetUpdatesRight;
 
@@ -96,15 +96,15 @@ class WavePropagation
 	public:
 
 		/**
-		 * @param size Domain size (= number of cells) without ghost cells
-		 * @param cellSize Size of one cell
+		 * @param[in] size Domain size (= number of cells) without ghost cells
+		 * @param[in] cellSize Size of one cell
+		 * @param[out] h The water heights
+		 * @param[out] hu The fluxes
+		 * @param[in] b The bathymetry
+		 * @param[out] f The froude numbers
 		 */
-		WavePropagation(T *h, T *hu, unsigned int size, T cellSize, T *b)
-			: m_h(h),
-			m_hu(hu),
-			m_size(size),
-			m_cellSize(cellSize),
-			m_b(b)
+		WavePropagation(unsigned int size, T cellSize, T *h, T *hu, T *b, T *f) 
+			: m_h(h), m_hu(hu), m_size(size), m_cellSize(cellSize), m_b(b), m_f(f)
 		{
 			// Allocate net updates
 			m_hNetUpdatesLeft = new T[size+1];
@@ -141,7 +141,12 @@ class WavePropagation
 		 * boundaries
 		 */
 		void setOutflowBoundaryConditions();
-		
+
+		/**
+		 * Computes the froude numbers
+		 */
+		void computeFroude();
+
 };
 
 

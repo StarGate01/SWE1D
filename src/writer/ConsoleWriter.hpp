@@ -67,13 +67,9 @@ namespace writer
 			 */
 			void write(const T *h, const T *hu, unsigned int size)
 			{
-				for (unsigned int i=1; i < size+1; i++) {
-					m_ostream << h[i] << ' ';
-				}
+				for (unsigned int i=1; i < size+1; i++)  m_ostream << h[i] << ' ';
 				m_ostream << '\n';	// do not flush the buffer here (do not use std::endl)
-				for (unsigned int i=1; i < size+1; i++) {
-					m_ostream << hu[i] << ' ';
-				}
+				for (unsigned int i=1; i < size+1; i++)  m_ostream << hu[i] << ' ';
 				m_ostream << std::endl;
 			}
 			

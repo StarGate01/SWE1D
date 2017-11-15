@@ -62,8 +62,8 @@ int main(int argc, char** argv)
 	T *hu = new T[args.size()+2];
 	//Bathymetry 0 is sealevel
 	T *b = new T[args.size()+2];
-	//Bathymetry with offset
-	T *b_offset = new T[args.size()+2];
+	//Frode numbers
+	T *f = new T[args.size()+2];
 
 	// Initialize water height and momentum
 	for (unsigned int i = 0; i < args.size()+2; i++)
@@ -71,6 +71,7 @@ int main(int argc, char** argv)
 		b[i] = scenario.getBathy(i);
 		h[i] = scenario.getHeight(i) - b[i]; //substract bathymetry, b/c water height is given as surface level, not water volume
 		hu[i] = scenario.getSpeed(i);
+		f[i] = 0;
 	}
 
 	// Create a writer that is responsible printing out values
@@ -78,36 +79,39 @@ int main(int argc, char** argv)
 	writer::VtkWriter writer("swe1d", scenario.getCellSize());
 
 	// Helper class computing the wave propagation
-	WavePropagation wavePropagation(h, hu, args.size(), scenario.getCellSize(), b);
-
+	WavePropagation wavePropagation(args.size(), scenario.getCellSize(), h, hu, b, f);
+	//Calculate initial froude numbers
+	wavePropagation.computeFroude();
 	// Write initial data
 	tools::Logger::logger.info("Initial data");
 
 	// Current time of simulation
 	T t = 0;
-	writer.write(t, h, hu, b, args.size());
+	writer.write(t, h, hu, b, f, args.size());
 
 	for (unsigned int i = 0; i < args.timeSteps(); i++) 
 	{
 		// Do one time step
-		tools::Logger::logger << "Computing timestep " << i
-				<< " at time " << t << std::endl;
+		tools::Logger::logger << "Computing timestep " << i << " at time " << t << std::endl;
 		// Update boundaries
 		wavePropagation.setOutflowBoundaryConditions();
-		// Compute numerical flux on each edge
+		// Compute numerical flux on each edge (and frode numbers)
 		T maxTimeStep = wavePropagation.computeNumericalFluxes();
 		// Update unknowns from net updates
 		wavePropagation.updateUnknowns(maxTimeStep);
+		//Update froude numbers
+		wavePropagation.computeFroude();
 		// Update time
 		t += maxTimeStep;
 		// Write new values
-		writer.write(t, h, hu, b, args.size());
+		writer.write(t, h, hu, b, f, args.size());
 	}
 
 	// Free allocated memory
 	delete [] h;
 	delete [] hu;
 	delete [] b;
+	delete [] f;
 
 	return 0;
 }

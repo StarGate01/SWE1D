@@ -158,9 +158,15 @@ namespace writer
 			vtkFile << "</DataArray>" << std::endl;
 
 			// bathymetry
-			vtkFile << "<DataArray Name=\"B\" type=\"Float32\" format=\"ascii\">" << std::endl;
+			vtkFile << "<DataArray Name=\"b\" type=\"Float32\" format=\"ascii\">" << std::endl;
 			for (int i=1; i<size+1; i++)
 					vtkFile << b[i] << std::endl;
+			vtkFile << "</DataArray>" << std::endl;
+
+			// bathymetry + water height
+			vtkFile << "<DataArray Name=\"b+h\" type=\"Float32\" format=\"ascii\">" << std::endl;
+			for (int i=1; i<size+1; i++)
+					vtkFile << b[i] + h[i] << std::endl;
 			vtkFile << "</DataArray>" << std::endl;
 
 			vtkFile << "</CellData>" << std::endl

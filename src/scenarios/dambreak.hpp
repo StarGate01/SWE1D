@@ -53,9 +53,9 @@ namespace scenarios
 		/** Point of collision (here: in the middle) */
 		const unsigned int m_xdis = m_size/2;
 		/** initial water height left of xdis*/
-		const float m_leftHeight = 25;
+		const float m_leftHeight = 20;
 		/** initial water height righr of xdis*/
-		const float m_rightHeight = 10;
+		const float m_rightHeight = 5;
 		/** initial water speed left of xdis */
 		const float m_leftSpeed = 0;
 		/** initial water speed right of xdis */
@@ -88,9 +88,9 @@ namespace scenarios
 		float getHeight(unsigned int pos)
 		{
 			if (pos <= m_size/2)
-				return m_leftHeight;
+				return m_leftHeight - getBathy(pos);
 
-			return m_rightHeight;
+			return m_rightHeight - getBathy(pos);
 		}
 
 		/**

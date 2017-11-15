@@ -88,9 +88,9 @@ namespace scenarios
 		float getHeight(unsigned int pos)
 		{
 			if (pos <= m_size/2)
-				return m_leftHeight - getBathy(pos);
+				return m_leftHeight;
 
-			return m_rightHeight - getBathy(pos);
+			return m_rightHeight;
 		}
 
 		/**

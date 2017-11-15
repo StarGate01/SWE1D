@@ -68,10 +68,9 @@ int main(int argc, char** argv)
 	// Initialize water height and momentum
 	for (unsigned int i = 0; i < args.size()+2; i++)
 	{
-		h[i] = scenario.getHeight(i);
-		hu[i] = scenario.getSpeed(i);
 		b[i] = scenario.getBathy(i);
-
+		h[i] = scenario.getHeight(i) - b[i]; //substract bathymetry, b/c water height is given as surface level, not water volume
+		hu[i] = scenario.getSpeed(i);
 	}
 
 	// Create a writer that is responsible printing out values

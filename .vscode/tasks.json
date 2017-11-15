@@ -2,7 +2,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "taskName": "Build Release Binaries",
+            "label": "Build Release Binaries",
             "type": "shell",
             "command": "scons",
             "problemMatcher": {
@@ -19,7 +19,7 @@
             }
         },
         {
-            "taskName": "Build Debug Binaries",
+            "label": "Build Debug Binaries",
             "type": "shell",
             "command": "scons",
             "args": [
@@ -43,17 +43,23 @@
             }
         },
         {
-            "taskName": "Clean Binaries",
+            "label": "Clean Binaries",
             "type": "shell",
             "command": "rm",
+            "options": {
+                "cwd": "${workspaceRoot}/build"
+            },
             "args": [
                 "-r",
-                "build"
+                "build_SWE1D",
+                "SWE1D",
+                "*.vtr",
+                "*.vtp"
             ],
             "problemMatcher": []
         },
         {
-            "taskName": "Regenerate Data",
+            "label": "Regenerate Data",
             "type": "shell",
             "command": "bash",
             "options": {
@@ -66,7 +72,7 @@
             "problemMatcher": []
         },
         {
-            "taskName": "Build Documentation",
+            "label": "Build Documentation",
             "type": "shell",
             "command": "bash",
             "args": [
@@ -88,7 +94,7 @@
             }
         },
         {
-            "taskName": "Clean Documentation",
+            "label": "Clean Documentation",
             "type": "shell",
             "command": "rm",
             "args": [
@@ -101,7 +107,7 @@
             "problemMatcher": []
         },
         {
-            "taskName": "Run Tests",
+            "label": "Run Tests",
             "type": "shell",
             "command": "scons",
             "args": [
@@ -128,7 +134,7 @@
             }
         },
         {
-            "taskName": "Build Presentation",
+            "label": "Build Presentation",
             "type": "shell",
             "command": "xelatex",
             "args": [
@@ -140,7 +146,7 @@
             "problemMatcher": []
         },
         {
-            "taskName": "Clean Presentation",
+            "label": "Clean Presentation",
             "type": "shell",
             "command": "rm",
             "args": [

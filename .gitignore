@@ -1,5 +1,7 @@
 # Builds
-build/
+build/*.vtr
+build/*.vtp
+build/*SWE1D
 
 # Eclipse files/folders
 .cproject

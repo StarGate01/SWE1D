@@ -169,8 +169,8 @@ namespace writer
 			vtkFile << "</DataArray>" << std::endl;
 
 			// frode number
-			vtkFile << "<DataArray Name=\"f*10\" type=\"Float32\" format=\"ascii\">" << std::endl;
-			for (int i=1; i<size+1; i++) vtkFile << f[i] * 10 << std::endl;
+			vtkFile << "<DataArray Name=\"f\" type=\"Float32\" format=\"ascii\">" << std::endl;
+			for (int i=1; i<size+1; i++) vtkFile << f[i] << std::endl;
 			vtkFile << "</DataArray>" << std::endl;
 
 			vtkFile << "</CellData>" << std::endl

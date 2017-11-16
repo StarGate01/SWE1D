@@ -20,31 +20,30 @@
 /**
  * @brief The solver adapter and framwork
  * 
+ *
  * Allocated variables:
- *   unknowns h,hu are defined on grid indices [0,..,n+1] (done by the caller)
- *     -> computational domain is [1,..,nx]
- *     -> plus ghost cell layer
+ * unknowns h,hu are defined on grid indices [0,..,n+1] (done by the caller)
+ * -> computational domain is [1,..,nx]
+ * -> plus ghost cell layer
  *
- *   net-updates are defined for edges with indices [0,..,n]
+ * net-updates are defined for edges with indices [0,..,n]
  *
- * A left/right net update with index (i-1) is located on the edge between
- *   cells with index (i-1) and (i):
- * <pre>
- *   *********************
- *   *         *         *
- *   *  (i-1)  *   (i)   *
- *   *         *         *
- *   *********************
- *
- *             *
- *            ***
- *           *****
- *             *
- *             *
- *    NetUpdatesLeft(i-1)
- *             or
- *    NetUpdatesRight(i-1)
- * </pre>
+ * A left/right net update with index (i-1) is located on the edge between cells with index (i-1) and (i):
+ * 
+ * @verbatim *********************
+*         *         *
+*  (i-1)  *   (i)   *
+*         *         *
+*********************
+ 
+          *
+         ***
+        *****
+          *
+          *
+  NetUpdatesLeft(i-1)
+         or
+  NetUpdatesRight(i-1) @endverbatim
  */
 class WavePropagation
 {

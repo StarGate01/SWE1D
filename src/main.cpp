@@ -30,7 +30,7 @@ int main(int argc, char** argv)
 	tools::Args args(argc, argv);
 
 	// Scenario
-	scenarios::ShockShock scenario(args.size()); //, args.options());
+	scenarios::HydraulicSub scenario(args.size()); //, args.options());
 
 	// Allocate memory
 	// Water height

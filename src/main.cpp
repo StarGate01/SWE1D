@@ -30,7 +30,7 @@ int main(int argc, char** argv)
 	tools::Args args(argc, argv);
 
 	// Scenario
-	scenarios::DamBreak scenario(args.size()); //, args.options());
+	scenarios::ShockShock scenario(args.size()); //, args.options());
 
 	// Allocate memory
 	// Water height
@@ -47,6 +47,9 @@ int main(int argc, char** argv)
 	{
 		b[i] = scenario.getBathy(i);
 		h[i] = scenario.getHeight(i) - b[i]; //substract bathymetry, b/c water height is given as surface level, not water volume
+		if (h[i] < ZERO_PRECISION) {
+			h[i] = 0;
+		}
 		hu[i] = scenario.getSpeed(i);
 		f[i] = 0;
 	}

@@ -23,13 +23,14 @@ namespace scenarios
 		const unsigned int m_size;
 		/** @brief Point of collision (here: in the middle) */
 		const unsigned int m_xdis = m_size/2;
-		/** @brief Initial water height at all cells */
-		const signed int m_height = 10;
+		/** @brief Initial water height at all cells on the left of xdis*/
+		const signed int m_leftHeight = 10;
 		/** @brief Initial water speed left of xdis */
 		const signed int m_leftSpeed = 50;
 		/** @brief Initial water speed right of xdis */
-		const signed int m_rightSpeed = -10;
-
+		const signed int m_rightSpeed = 0;
+		/** @brief dheight of the ground on the right of xdis */
+		const signed int m_rightBathy = 20;
 	public:
 
 		/** 
@@ -51,7 +52,8 @@ namespace scenarios
 		 */
 		unsigned int getHeight(unsigned int pos)
 		{
-			return m_height;
+			if (pos <= m_xdis) return m_leftHeight;
+			return 0;
 		}
 
 		/**
@@ -64,7 +66,7 @@ namespace scenarios
 		signed int getSpeed(unsigned int pos)
 		{
 			if (pos <= m_xdis) return m_leftSpeed;
-			return m_rightSpeed; // switch left and right for rare-rare
+			return m_rightSpeed; 
 		}
 
 		/**
@@ -76,7 +78,8 @@ namespace scenarios
 		 */
 		float getBathy(unsigned int pos)
 		{
-			return 0;
+			if (pos <= m_xdis) return 0;
+			return m_rightBathy;
 		}
 
 		/**

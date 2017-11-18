@@ -1,6 +1,5 @@
 # Builds
-build/*.vtr
-build/*.vtp
+build/data
 build/*SWE1D
 documentation/build
 

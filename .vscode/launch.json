@@ -8,7 +8,7 @@
             "program": "${workspaceRoot}/build/SWE1D",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceRoot}/build",
+            "cwd": "${workspaceRoot}/build/data",
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb",
@@ -28,7 +28,7 @@
             "program": "/mnt/c/Users/Christoph/Documents/Studium/5_WS1718/TSISIM/Tutorium/SWE1D/build/SWE1D",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "/mnt/c/Users/Christoph/Documents/Studium/5_WS1718/TSISIM/Tutorium/SWE1D/build",
+            "cwd": "/mnt/c/Users/Christoph/Documents/Studium/5_WS1718/TSISIM/Tutorium/SWE1D/build/data",
             "environment": [],
             "externalConsole": true,
             "windows": {

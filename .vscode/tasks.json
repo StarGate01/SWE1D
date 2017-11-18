@@ -67,7 +67,7 @@
             },
             "args": [
                "-c",
-               "\"rm -f *.vtp *.vtr && ./SWE1D\""
+               "\"rm -rf data && mkdir data && cd data && ../SWE1D\""
             ],
             "problemMatcher": []
         },

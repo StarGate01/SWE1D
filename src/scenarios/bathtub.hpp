@@ -1,10 +1,10 @@
 /**
- * @file test.hpp
- * @brief Test scenario
+ * @file bathtub.hpp
+ * @brief Bathtub scenario
  */
 
-#ifndef SCENARIOS_TEST_H_
-#define SCENARIOS_TEST_H_
+#ifndef SCENARIOS_BATHTUB_H_
+#define SCENARIOS_BATHTUB_H_
 
 #include <cmath>
 #include "../types.hpp"
@@ -13,9 +13,9 @@ namespace scenarios
 {
 
 	/**
-	 * @brief Implementation of the Testk scenario
+	 * @brief Implementation of the Bathtub scenario
 	 */
-	class TestScenario
+	class Bathtub
 	{
 
 	private:
@@ -32,7 +32,7 @@ namespace scenarios
 		 * 
 		 * @param size The size of the domain
 		 */
-		TestScenario(unsigned int size) //, std::vector<int> options)
+		Bathtub(unsigned int size) //, std::vector<int> options)
 			: m_size(size) //, m_options(options)
 		{
 		}
@@ -46,7 +46,8 @@ namespace scenarios
 		 */
 		float getHeight(unsigned int pos)
 		{
-			if (std::abs(pos - m_size/2) < 20) return 15;
+			if (std::abs(pos - m_size/2) < 15) return 20;
+			if(pos <= 5 || (m_size - pos) < 5) return 0;
 			return 10;
 		}
 
@@ -71,6 +72,8 @@ namespace scenarios
 		 */
 		float getBathy(unsigned int pos)
 		{
+			if (std::abs(pos - m_size/2) < 30) return -30;
+			if(pos <= 5 || (m_size - pos) < 5) return 30;
 			return 0;
 		}
 
@@ -90,4 +93,4 @@ namespace scenarios
 
 }
 
-#endif /* SCENARIOS_TEST_H_ */
+#endif /* SCENARIOS_BATHTUB_H_ */

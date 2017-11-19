@@ -14,7 +14,7 @@
 #include "scenarios/dambreak.hpp"
 #include "scenarios/shockshock.hpp"
 #include "scenarios/rarerare.hpp"
-#include "scenarios/test.hpp"
+#include "scenarios/bathtub.hpp"
 // #include "writer/ConsoleWriter.h"
 
 /**
@@ -31,7 +31,7 @@ int main(int argc, char** argv)
 	tools::Args args(argc, argv);
 
 	// Scenario
-	scenarios::DamBreak scenario(args.size()); //, args.options());
+	scenarios::Bathtub scenario(args.size()); //, args.options());
 
 	// Allocate memory
 	// Water height
